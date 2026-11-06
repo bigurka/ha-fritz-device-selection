@@ -1,0 +1,7 @@
+{
+    "exceptions": {
+        "error_refresh_hosts_info": {
+            "message": "Pogre\u0161ka pri osvje\u017eavanju informacija o hostovima"
+        }
+    }
+}

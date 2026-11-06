@@ -1,0 +1,276 @@
+{
+    "common": {
+        "data_description_feature_device_tracking": "Die Funktion zur Verfolgung von Netzwerkger\u00e4ten aktivieren oder deaktivieren.",
+        "data_description_host": "Hostname oder IP-Adresse deines FRITZ!Box-Routers.",
+        "data_description_password": "Passwort f\u00fcr die FRITZ!Box.",
+        "data_description_port": "Zur Verwendung des Standard-Ports leer lassen.",
+        "data_description_ssl": "SSL verwenden, um mit der FRITZ!Box zu verbinden.",
+        "data_description_username": "Benutzername f\u00fcr die FRITZ!Box. FRITZ!Powerline-Ger\u00e4te ignorieren diese Angabe und akzeptieren jeden beliebigen Wert.",
+        "data_feature_device_tracking": "Verfolgung von Netzwerkger\u00e4ten aktivieren"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "Ger\u00e4t ist bereits konfiguriert",
+            "already_in_progress": "Die Konfiguration l\u00e4uft bereits. Schlie\u00dfe die bestehende Konfiguration ab, bevor du erneut beginnst.",
+            "ignore_ip6_link_local": "IPv6 Link-Local-Adresse wird nicht unterst\u00fctzt.",
+            "not_supported": "Dieses Ger\u00e4t unterst\u00fctzt die TR-064-API nicht."
+        },
+        "error": {
+            "already_configured": "Ger\u00e4t ist bereits konfiguriert",
+            "already_in_progress": "Die Konfiguration l\u00e4uft bereits. Schlie\u00dfe die bestehende Konfiguration ab, bevor du erneut beginnst.",
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_auth": "Ung\u00fcltige Authentifizierung",
+            "unknown_error": "Unerwarteter Fehler",
+            "upnp_not_configured": "Fehlende UPnP-Einstellungen auf dem Ger\u00e4t."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "data": {
+                    "feature_device_tracking": "Verfolgung von Netzwerkger\u00e4ten aktivieren",
+                    "password": "Passwort",
+                    "ssl": "Verwendet ein SSL-Zertifikat",
+                    "username": "Benutzername"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Die Funktion zur Verfolgung von Netzwerkger\u00e4ten aktivieren oder deaktivieren.",
+                    "password": "Passwort f\u00fcr die FRITZ!Box.",
+                    "ssl": "SSL verwenden, um mit der FRITZ!Box zu verbinden.",
+                    "username": "Benutzername f\u00fcr die FRITZ!Box. FRITZ!Powerline-Ger\u00e4te ignorieren diese Angabe und akzeptieren jeden beliebigen Wert."
+                },
+                "description": "Entdeckte FRITZ!Box: {name} \n\nRichte deine FRITZ!Box Tools ein, um {name} zu kontrollieren",
+                "title": "FRITZ!Box Tools einrichten"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Passwort",
+                    "username": "Benutzername"
+                },
+                "data_description": {
+                    "password": "Passwort f\u00fcr die FRITZ!Box.",
+                    "username": "Benutzername f\u00fcr die FRITZ!Box. FRITZ!Powerline-Ger\u00e4te ignorieren diese Angabe und akzeptieren jeden beliebigen Wert."
+                },
+                "description": "Aktualisiere die Anmeldedaten von FRITZ!Box Tools f\u00fcr: {host}. \n\nFRITZ!Box Tools kann sich nicht an deiner FRITZ!Box anmelden.",
+                "title": "FRITZ!Box Tools - Anmeldedaten aktualisieren"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port",
+                    "ssl": "Verwendet ein SSL-Zertifikat"
+                },
+                "data_description": {
+                    "host": "Hostname oder IP-Adresse deines FRITZ!Box-Routers.",
+                    "port": "Zur Verwendung des Standard-Ports leer lassen.",
+                    "ssl": "SSL verwenden, um mit der FRITZ!Box zu verbinden."
+                },
+                "description": "FRITZ!Box Tools Konfiguration aktualisieren f\u00fcr: {host}.",
+                "title": "FRITZ!Box Tools - Konfiguration aktualisieren"
+            },
+            "user": {
+                "data": {
+                    "feature_device_tracking": "Verfolgung von Netzwerkger\u00e4ten aktivieren",
+                    "host": "Host",
+                    "password": "Passwort",
+                    "port": "Port",
+                    "ssl": "Verwendet ein SSL-Zertifikat",
+                    "username": "Benutzername"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Die Funktion zur Verfolgung von Netzwerkger\u00e4ten aktivieren oder deaktivieren.",
+                    "host": "Hostname oder IP-Adresse deines FRITZ!Box-Routers.",
+                    "password": "Passwort f\u00fcr die FRITZ!Box.",
+                    "port": "Zur Verwendung des Standard-Ports leer lassen.",
+                    "ssl": "SSL verwenden, um mit der FRITZ!Box zu verbinden.",
+                    "username": "Benutzername f\u00fcr die FRITZ!Box. FRITZ!Powerline-Ger\u00e4te ignorieren diese Angabe und akzeptieren jeden beliebigen Wert."
+                },
+                "description": "FRITZ!Box Tools einrichten, um deine FRITZ!Box zu steuern.\nMindestens erforderlich: Benutzername, Passwort.",
+                "title": "FRITZ!Box Tools einrichten"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_connected": {
+                "name": "Verbindung"
+            },
+            "is_linked": {
+                "name": "Verbindung"
+            }
+        },
+        "button": {
+            "cleanup": {
+                "name": "Aufr\u00e4umen"
+            },
+            "firmware_update": {
+                "name": "Firmware-Update"
+            },
+            "reconnect": {
+                "name": "Neu verbinden"
+            },
+            "wake_on_lan": {
+                "name": "Wake on LAN"
+            }
+        },
+        "sensor": {
+            "connection_uptime": {
+                "name": "Verbindungsverf\u00fcgbarkeit"
+            },
+            "cpu_temperature": {
+                "name": "CPU-Temperatur"
+            },
+            "external_ip": {
+                "name": "Externe IP"
+            },
+            "external_ipv6": {
+                "name": "Externe IPv6"
+            },
+            "gb_received": {
+                "name": "GB empfangen"
+            },
+            "gb_sent": {
+                "name": "GB gesendet"
+            },
+            "kb_s_received": {
+                "name": "Download-Durchsatz"
+            },
+            "kb_s_sent": {
+                "name": "Upload-Durchsatz"
+            },
+            "link_attenuation_received": {
+                "name": "Download-Leitungsd\u00e4mpfung"
+            },
+            "link_attenuation_sent": {
+                "name": "Upload-Leitungsd\u00e4mpfung"
+            },
+            "link_kb_s_received": {
+                "name": "Link-Download-Durchsatz"
+            },
+            "link_kb_s_sent": {
+                "name": "Link-Upload-Durchsatz"
+            },
+            "link_noise_margin_received": {
+                "name": "Link-Download-Rauschabstand"
+            },
+            "link_noise_margin_sent": {
+                "name": "Link-Upload-Rauschabstand"
+            },
+            "max_kb_s_received": {
+                "name": "Maximaler Download-Durchsatz der Verbindung"
+            },
+            "max_kb_s_sent": {
+                "name": "Maximaler Upload-Durchsatz der Verbindung"
+            }
+        },
+        "switch": {
+            "internet_access": {
+                "name": "Internetzugang"
+            },
+            "wi_fi_guest": {
+                "name": "WLAN-Gast"
+            },
+            "wi_fi_main_2_4ghz": {
+                "name": "WLAN-Haupt (2,4 GHz)"
+            },
+            "wi_fi_main_5ghz": {
+                "name": "WLAN-Haupt (5 GHz)"
+            },
+            "wi_fi_main_5ghz_high_6ghz": {
+                "name": "WLAN-Haupt (5 GHz hoch / 6 GHz)"
+            }
+        }
+    },
+    "exceptions": {
+        "config_entry_not_found": {
+            "message": "Die Ausf\u00fchrung der Aktion \u201e{service}\u201c ist fehlgeschlagen. Konfigurationseintrag f\u00fcr Ziel nicht gefunden"
+        },
+        "error_connecting": {
+            "message": "Fehler beim Verbinden mit der FRITZ!Box: {error}"
+        },
+        "error_parse_device_info": {
+            "message": "Fehler beim Parsen der Ger\u00e4teinformationen. Bitte \u00fcberpr\u00fcfe das Systemereignisprotokoll deiner FRITZ!Box auf fehlerhafte Daten und l\u00f6sche die Ereignisliste."
+        },
+        "error_refresh_hosts_info": {
+            "message": "Fehler beim Aktualisieren der Hostinformationen"
+        },
+        "error_upnp_disabled": {
+            "message": "UPnP ist auf der FRITZ!Box deaktiviert. Bitte aktiviere UPnP, um diese Integration zu nutzen."
+        },
+        "service_dial_failed": {
+            "message": "W\u00e4hlversuch fehlgeschlagen, pr\u00fcfe, ob der W\u00e4hlhilfe-Dienst der FRITZ!Box aktiviert ist"
+        },
+        "service_not_supported": {
+            "message": "Aktion nicht unterst\u00fctzt"
+        },
+        "service_parameter_unknown": {
+            "message": "Aktion oder Parameter unbekannt"
+        },
+        "update_failed": {
+            "message": "Fehler beim Aktualisieren der Daten: {error}"
+        }
+    },
+    "issues": {
+        "deprecated_cleanup_button": {
+            "description": "Die \u201eAufr\u00e4umen\u201c-Taste ist veraltet und wird in Home Assistant Core {removal_version} entfernt. Bitte aktualisiere deine Automationen und Dashboards, um die Verwendung dieser Taste zu entfernen. Die Aktion wird nun automatisch bei jeder Datenaktualisierung  ausgef\u00fchrt.",
+            "title": "\u201eAufr\u00e4umen\u201c-Taste ist veraltet"
+        },
+        "deprecated_firmware_update_button": {
+            "description": "Die \u201eFirmware-Update\u201c-Taste ist veraltet und wird in Home Assistant Core {removal_version} entfernt. Sie wurde durch eine Update-Entit\u00e4t ersetzt. Bitte aktualisiere deine Automationen und Dashboards, um die Verwendung dieser Taste zu entfernen.",
+            "title": "\u201eFirmware-Update\u201c-Taste veraltet"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "Sekunden, um ein Ger\u00e4t als \u201ezuhause\u201c zu betrachten",
+                    "feature_device_tracking": "Verfolgung von Netzwerkger\u00e4ten aktivieren",
+                    "old_discovery": "Alte Erkennungsmethode aktivieren"
+                },
+                "data_description": {
+                    "consider_home": "Zeit in Sekunden, um ein Ger\u00e4t als zuhause zu betrachten. Standardwert ist 180 Sekunden.",
+                    "feature_device_tracking": "Die Funktion zur Verfolgung von Netzwerkger\u00e4ten aktivieren oder deaktivieren.",
+                    "old_discovery": "Alte Erkennungsmethode aktivieren. Dies ist f\u00fcr einige Szenarien erforderlich."
+                }
+            }
+        }
+    },
+    "services": {
+        "dial": {
+            "description": "L\u00e4sst die FRITZ!Box eine Rufnummer w\u00e4hlen.",
+            "fields": {
+                "device_id": {
+                    "description": "Die FRITZ!Box ausw\u00e4hlen, von der aus angerufen werden soll.",
+                    "name": "FRITZ!Box-Ger\u00e4t"
+                },
+                "max_ring_seconds": {
+                    "description": "Die maximale Anzahl von Sekunden, die es nach dem W\u00e4hlen klingeln soll.",
+                    "name": "Maximale Klingeldauer"
+                },
+                "number": {
+                    "description": "Die zu w\u00e4hlende Rufnummer.",
+                    "name": "Rufnummer"
+                }
+            },
+            "name": "Rufnummer w\u00e4hlen"
+        },
+        "set_guest_wifi_password": {
+            "description": "Legt ein neues Passwort f\u00fcr das G\u00e4ste-WLAN fest. Das Passwort muss zwischen 8 und 63 Zeichen lang sein. Wenn kein zus\u00e4tzlicher Parameter festgelegt wird, wird das Passwort automatisch mit einer L\u00e4nge von 12 Zeichen generiert.",
+            "fields": {
+                "device_id": {
+                    "description": "W\u00e4hle die zu konfigurierende FRITZ!Box aus.",
+                    "name": "FRITZ!Box-Ger\u00e4t"
+                },
+                "length": {
+                    "description": "L\u00e4nge des neuen Passworts. Es wird automatisch generiert, wenn kein Passwort festgelegt ist.",
+                    "name": "L\u00e4nge des Passworts"
+                },
+                "password": {
+                    "description": "Neues Passwort f\u00fcr das G\u00e4ste-WLAN.",
+                    "name": "Passwort"
+                }
+            },
+            "name": "Passwort f\u00fcr G\u00e4ste-WLAN festlegen"
+        }
+    }
+}

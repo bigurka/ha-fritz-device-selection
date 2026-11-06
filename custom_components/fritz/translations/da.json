@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheden er allerede konfigureret",
+            "already_in_progress": "Dette er allerede ved at blive konfigureret. Afslut den eksisterende konfiguration, f\u00f8r du starter forfra."
+        },
+        "error": {
+            "already_configured": "Enheden er allerede konfigureret",
+            "already_in_progress": "Dette er allerede ved at blive konfigureret. Afslut den eksisterende konfiguration, f\u00f8r du starter forfra.",
+            "cannot_connect": "Forbindelse mislykkedes",
+            "invalid_auth": "Ugyldig godkendelse"
+        },
+        "step": {
+            "confirm": {
+                "data": {
+                    "password": "Adgangskode",
+                    "username": "Brugernavn"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Adgangskode",
+                    "username": "Brugernavn"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "V\u00e6rt",
+                    "password": "Adgangskode",
+                    "port": "Port",
+                    "username": "Brugernavn"
+                }
+            }
+        }
+    }
+}

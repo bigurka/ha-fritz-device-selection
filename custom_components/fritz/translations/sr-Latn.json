@@ -1,0 +1,276 @@
+{
+    "common": {
+        "data_description_feature_device_tracking": "Omogu\u0107i ili onemogu\u0107i funkciju pra\u0107enja mre\u017enih ure\u0111aja.",
+        "data_description_host": "Naziv hosta ili IP adresa va\u0161eg FRITZ!Box rutera.",
+        "data_description_password": "Lozinka za FRITZ!Box.",
+        "data_description_port": "Ostavite prazno da biste koristili podrazumevani port.",
+        "data_description_ssl": "Koristite SSL za povezivanje sa FRITZ!Box ure\u0111ajem.",
+        "data_description_username": "Korisni\u010dko ime za FRITZ!Box. FRITZ!Powerline ure\u0111aji ignori\u0161e ovu informaciju i prihvataju bilo koju vrednost.",
+        "data_feature_device_tracking": "Omogu\u0107i pra\u0107enje mre\u017enih ure\u0111aja"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "Ure\u0111aj je ve\u0107 pode\u0161en",
+            "already_in_progress": "Ovo se ve\u0107 konfiguri\u0161e. Zavr\u0161ite postoje\u0107e pode\u0161avanje pre nego \u0161to poku\u0161ate ponovo.",
+            "ignore_ip6_link_local": "IPv6 lokalna adresa veze nije podr\u017eana.",
+            "not_supported": "Ovaj ure\u0111aj ne podr\u017eava TR-064 API."
+        },
+        "error": {
+            "already_configured": "Ure\u0111aj je ve\u0107 pode\u0161en",
+            "already_in_progress": "Ovo se ve\u0107 konfiguri\u0161e. Zavr\u0161ite postoje\u0107e pode\u0161avanje pre nego \u0161to poku\u0161ate ponovo.",
+            "cannot_connect": "Povezivanje nije uspelo",
+            "invalid_auth": "Neva\u017ee\u0107i podaci za prijavu",
+            "unknown_error": "Neo\u010dekivana gre\u0161ka",
+            "upnp_not_configured": "Nedostaju UPnP pode\u0161avanja na ure\u0111aju."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "data": {
+                    "feature_device_tracking": "Omogu\u0107i pra\u0107enje mre\u017enih ure\u0111aja",
+                    "password": "Lozinka",
+                    "ssl": "Koristi SSL potvrdu",
+                    "username": "Korisni\u010dko ime"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Omogu\u0107i ili onemogu\u0107i funkciju pra\u0107enja mre\u017enih ure\u0111aja.",
+                    "password": "Lozinka za FRITZ!Box.",
+                    "ssl": "Koristite SSL za povezivanje sa FRITZ!Box ure\u0111ajem.",
+                    "username": "Korisni\u010dko ime za FRITZ!Box. FRITZ!Powerline ure\u0111aji ignori\u0161e ovu informaciju i prihvataju bilo koju vrednost."
+                },
+                "description": "Otkriven FRITZ!Box: {name}\n\nPodesite FRITZ!Box alatke za upravljanje ure\u0111ajem {name}.",
+                "title": "Pode\u0161avanje FRITZ!Box alata"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Lozinka",
+                    "username": "Korisni\u010dko ime"
+                },
+                "data_description": {
+                    "password": "Lozinka za FRITZ!Box.",
+                    "username": "Korisni\u010dko ime za FRITZ!Box. FRITZ!Powerline ure\u0111aji ignori\u0161e ovu informaciju i prihvataju bilo koju vrednost."
+                },
+                "description": "A\u017eurirajte FRITZ!Box Tools pristupne podatke za: {host}.\n\nFRITZ!Box Tools ne mo\u017ee da se prijavi na va\u0161 FRITZ!Box.",
+                "title": "FRITZ!Box alati \u2013 A\u017euriranje pristupnih podataka"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Adresa hosta",
+                    "port": "Port",
+                    "ssl": "Koristi SSL potvrdu"
+                },
+                "data_description": {
+                    "host": "Naziv hosta ili IP adresa va\u0161eg FRITZ!Box rutera.",
+                    "port": "Ostavite prazno da biste koristili podrazumevani port.",
+                    "ssl": "Koristite SSL za povezivanje sa FRITZ!Box ure\u0111ajem."
+                },
+                "description": "A\u017eurirajte konfiguraciju FRITZ!Box alatki za: {host}.",
+                "title": "FRITZ!Box alatke \u2013 A\u017euriranje konfiguracije"
+            },
+            "user": {
+                "data": {
+                    "feature_device_tracking": "Omogu\u0107i pra\u0107enje mre\u017enih ure\u0111aja",
+                    "host": "Adresa hosta",
+                    "password": "Lozinka",
+                    "port": "Port",
+                    "ssl": "Koristi SSL potvrdu",
+                    "username": "Korisni\u010dko ime"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Omogu\u0107i ili onemogu\u0107i funkciju pra\u0107enja mre\u017enih ure\u0111aja.",
+                    "host": "Naziv hosta ili IP adresa va\u0161eg FRITZ!Box rutera.",
+                    "password": "Lozinka za FRITZ!Box.",
+                    "port": "Ostavite prazno da biste koristili podrazumevani port.",
+                    "ssl": "Koristite SSL za povezivanje sa FRITZ!Box ure\u0111ajem.",
+                    "username": "Korisni\u010dko ime za FRITZ!Box. FRITZ!Powerline ure\u0111aji ignori\u0161e ovu informaciju i prihvataju bilo koju vrednost."
+                },
+                "description": "Podesite FRITZ!Box alatke za upravljanje va\u0161im FRITZ!Box ure\u0111ajem.  \nMinimalno potrebno: korisni\u010dko ime, lozinka.",
+                "title": "Pode\u0161avanje FRITZ!Box alata"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_connected": {
+                "name": "Veza"
+            },
+            "is_linked": {
+                "name": "Link"
+            }
+        },
+        "button": {
+            "cleanup": {
+                "name": "\u010ci\u0161\u0107enje"
+            },
+            "firmware_update": {
+                "name": "A\u017euriranje firmvera"
+            },
+            "reconnect": {
+                "name": "Ponovno povezivanje"
+            },
+            "wake_on_lan": {
+                "name": "Bu\u0111enje preko LAN-a"
+            }
+        },
+        "sensor": {
+            "connection_uptime": {
+                "name": "Vreme trajanja veze"
+            },
+            "cpu_temperature": {
+                "name": "Temperatura CPU-a"
+            },
+            "external_ip": {
+                "name": "Spoljni IP"
+            },
+            "external_ipv6": {
+                "name": "Spoljni IPv6"
+            },
+            "gb_received": {
+                "name": "GB primljeno"
+            },
+            "gb_sent": {
+                "name": "GB poslato"
+            },
+            "kb_s_received": {
+                "name": "Propusnost preuzimanja"
+            },
+            "kb_s_sent": {
+                "name": "Propusnost slanja"
+            },
+            "link_attenuation_received": {
+                "name": "Slabljenje snage preuzimanja veze"
+            },
+            "link_attenuation_sent": {
+                "name": "Slabljenje snage pri slanju linka"
+            },
+            "link_kb_s_received": {
+                "name": "Propusnost preuzimanja veze"
+            },
+            "link_kb_s_sent": {
+                "name": "Propusnost slanja linka"
+            },
+            "link_noise_margin_received": {
+                "name": "Margina \u0161uma preuzimanja veze"
+            },
+            "link_noise_margin_sent": {
+                "name": "Margina \u0161uma pri slanju linka"
+            },
+            "max_kb_s_received": {
+                "name": "Maksimalna propusnost preuzimanja veze"
+            },
+            "max_kb_s_sent": {
+                "name": "Maksimalna propusnost slanja veze"
+            }
+        },
+        "switch": {
+            "internet_access": {
+                "name": "Pristup internetu"
+            },
+            "wi_fi_guest": {
+                "name": "Gostuju\u0107i Wi-Fi"
+            },
+            "wi_fi_main_2_4ghz": {
+                "name": "Glavni Wi-Fi 2.4GHz"
+            },
+            "wi_fi_main_5ghz": {
+                "name": "Glavni Wi-Fi 5GHz"
+            },
+            "wi_fi_main_5ghz_high_6ghz": {
+                "name": "Glavni Wi-Fi 5GHz High / 6GHz"
+            }
+        }
+    },
+    "exceptions": {
+        "config_entry_not_found": {
+            "message": "Nije uspelo izvr\u0161avanje akcije \u201e{service}\u201c. Konfiguracioni unos za cilj nije prona\u0111en"
+        },
+        "error_connecting": {
+            "message": "Gre\u0161ka pri povezivanju sa FRITZ!Box-om: {error}"
+        },
+        "error_parse_device_info": {
+            "message": "Gre\u0161ka prilikom ra\u0161\u010dlanjivanja informacija o ure\u0111aju. Molimo proverite sistemski dnevnik doga\u0111aja (event log) va\u0161eg FRITZ!Box ure\u0111aja zbog neispravnih podataka i obri\u0161ite listu doga\u0111aja."
+        },
+        "error_refresh_hosts_info": {
+            "message": "Gre\u0161ka pri osve\u017eavanju informacija o hostovima"
+        },
+        "error_upnp_disabled": {
+            "message": "UPnP je onemogu\u0107en na FRITZ!Box-u. Molimo vas da omogu\u0107ite UPnP kako biste koristili ovu integraciju."
+        },
+        "service_dial_failed": {
+            "message": "Nije uspelo biranje, proverite da li je usluga \u201eklik za biranje\u201c na FRITZ!Box ure\u0111aju aktivirana"
+        },
+        "service_not_supported": {
+            "message": "Akcija nije podr\u017eana"
+        },
+        "service_parameter_unknown": {
+            "message": "Akcija ili parametar nije poznat"
+        },
+        "update_failed": {
+            "message": "Gre\u0161ka prilikom a\u017euriranja podataka: {error}"
+        }
+    },
+    "issues": {
+        "deprecated_cleanup_button": {
+            "description": "Dugme \u201eO\u010disti\u201c je zastarelo i bi\u0107e uklonjeno u verziji Home Assistant Core {removal_version}. Molimo vas da a\u017eurirate svoje automatizacije i kontrolne table (dashboards) kako biste uklonili upotrebu ovog dugmeta. Ova radnja se sada izvr\u0161ava automatski prilikom svakog osve\u017eavanja podataka.",
+            "title": "Dugme \u201eO\u010disti\u201c je zastarelo"
+        },
+        "deprecated_firmware_update_button": {
+            "description": "Dugme \u201eA\u017euriranje firmvera\u201d je zastarelo i bi\u0107e uklonjeno u verziji Home Assistant Core {removal_version}. Zamenjeno je entitetom za a\u017euriranje. Molimo vas da izmenite svoje automatizacije i kontrolne table kako biste uklonili ovo dugme.",
+            "title": "Dugme \u201eA\u017euriranje firmvera\u201d je zastarelo"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "Sekunde za razmatranje ure\u0111aja kao \u201ekod ku\u0107e\u201c",
+                    "feature_device_tracking": "Omogu\u0107i pra\u0107enje mre\u017enih ure\u0111aja",
+                    "old_discovery": "Omogu\u0107i stari metod otkrivanje"
+                },
+                "data_description": {
+                    "consider_home": "Vreme u sekundama za smatrati ure\u0111aj prisutnim kod ku\u0107e. Podrazumevano je 180 sekundi.",
+                    "feature_device_tracking": "Omogu\u0107i ili onemogu\u0107i funkciju pra\u0107enja mre\u017enih ure\u0111aja.",
+                    "old_discovery": "Omogu\u0107i stari metod otkrivanja. Ovo je neophodno u odre\u0111enim scenarijima."
+                }
+            }
+        }
+    },
+    "services": {
+        "dial": {
+            "description": "Omogu\u0107ava da FRITZ!Box pozove telefonski broj.",
+            "fields": {
+                "device_id": {
+                    "description": "Izaberite FRITZ!Box ure\u0111aj sa kog \u017eelite da pozovete.",
+                    "name": "Ure\u0111aj FRITZ!Box"
+                },
+                "max_ring_seconds": {
+                    "description": "Maksimalan broj sekundi zvonjenja nakon pozivanja.",
+                    "name": "Maksimalno trajanje zvonjenja"
+                },
+                "number": {
+                    "description": "Telefonski broj koji treba pozvati.",
+                    "name": "Telefonski broj"
+                }
+            },
+            "name": "Pozovi telefonski broj"
+        },
+        "set_guest_wifi_password": {
+            "description": "Postavlja novu lozinku za gostuju\u0107i Wi-Fi. Lozinka mora imati izme\u0111u 8 i 63 znaka. Ako se ne postavi dodatni parametar, lozinka \u0107e biti automatski generisana sa du\u017einom od 12 znakova.",
+            "fields": {
+                "device_id": {
+                    "description": "Izaberite FRITZ!Box za pode\u0161avanje.",
+                    "name": "FRITZ!Box ure\u0111aj"
+                },
+                "length": {
+                    "description": "Du\u017eina nove lozinke. Bi\u0107e automatski generisana ako lozinka nije postavljena.",
+                    "name": "Du\u017eina lozinke"
+                },
+                "password": {
+                    "description": "Nova lozinka za gostuju\u0107i Wi-Fi.",
+                    "name": "Lozinka"
+                }
+            },
+            "name": "Postavi lozinku za gostuju\u0107i Wi-Fi"
+        }
+    }
+}

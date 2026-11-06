@@ -1,0 +1,247 @@
+{
+    "common": {
+        "data_description_feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u6a5f\u5668\u306e\u8ffd\u8de1\u6a5f\u80fd\u3092\u6709\u52b9\u307e\u305f\u306f\u7121\u52b9\u306b\u3057\u307e\u3059\u3002",
+        "data_description_host": "FRITZ!Box \u30eb\u30fc\u30bf\u30fc\u306e\u30db\u30b9\u30c8\u540d\u307e\u305f\u306f IP \u30a2\u30c9\u30ec\u30b9\u3002",
+        "data_description_password": "FRITZ!Box\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3002",
+        "data_description_port": "\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u30dd\u30fc\u30c8\u3092\u4f7f\u7528\u3059\u308b\u5834\u5408\u306f\u3001\u7a7a\u6b04\u306e\u307e\u307e\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+        "data_description_ssl": "SSL\u3092\u4f7f\u7528\u3057\u3066FRITZ!Box\u306b\u63a5\u7d9a\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+        "data_description_username": "FRITZ!Box\u306e\u30e6\u30fc\u30b6\u30fc\u540d\u3067\u3059\u3002FRITZ!Powerline\u30c7\u30d0\u30a4\u30b9\u306f\u3053\u306e\u60c5\u5831\u3092\u7121\u8996\u3057\u3001\u4efb\u610f\u306e\u5024\u3092\u53d7\u3051\u5165\u308c\u307e\u3059\u3002",
+        "data_feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u30c7\u30d0\u30a4\u30b9\u306e\u8ffd\u8de1\u3092\u6709\u52b9\u306b\u3059\u308b"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "\u30c7\u30d0\u30a4\u30b9\u306f\u3059\u3067\u306b\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u3059",
+            "already_in_progress": "\u73fe\u5728\u3001\u3053\u306e\u8a2d\u5b9a\u306f\u3059\u3067\u306b\u9032\u884c\u4e2d\u3067\u3059\u3002\u518d\u5ea6\u8a2d\u5b9a\u3092\u958b\u59cb\u3059\u308b\u524d\u306b\u3001\u73fe\u5728\u306e\u8a2d\u5b9a\u3092\u5b8c\u4e86\u3055\u305b\u3066\u304f\u3060\u3055\u3044\u3002",
+            "ignore_ip6_link_local": "IPv6\u30ea\u30f3\u30af\u306e\u30ed\u30fc\u30ab\u30eb\u30a2\u30c9\u30ec\u30b9\u306f\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u3002"
+        },
+        "error": {
+            "already_configured": "\u30c7\u30d0\u30a4\u30b9\u306f\u3059\u3067\u306b\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u3059",
+            "already_in_progress": "\u73fe\u5728\u3001\u3053\u306e\u8a2d\u5b9a\u306f\u3059\u3067\u306b\u9032\u884c\u4e2d\u3067\u3059\u3002\u518d\u5ea6\u8a2d\u5b9a\u3092\u958b\u59cb\u3059\u308b\u524d\u306b\u3001\u73fe\u5728\u306e\u8a2d\u5b9a\u3092\u5b8c\u4e86\u3055\u305b\u3066\u304f\u3060\u3055\u3044\u3002",
+            "cannot_connect": "\u63a5\u7d9a\u306b\u5931\u6557\u3057\u307e\u3057\u305f",
+            "invalid_auth": "\u7121\u52b9\u306a\u8a8d\u8a3c",
+            "unknown_error": "\u4e88\u671f\u3057\u306a\u3044\u30a8\u30e9\u30fc",
+            "upnp_not_configured": "\u30c7\u30d0\u30a4\u30b9\u306bUPnP\u306e\u8a2d\u5b9a\u304c\u3042\u308a\u307e\u305b\u3093\u3002"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "data": {
+                    "feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u30c7\u30d0\u30a4\u30b9\u306e\u8ffd\u8de1\u3092\u6709\u52b9\u306b\u3059\u308b",
+                    "password": "\u30d1\u30b9\u30ef\u30fc\u30c9",
+                    "ssl": "SSL\u8a3c\u660e\u66f8\u3092\u4f7f\u7528\u3059\u308b",
+                    "username": "\u30e6\u30fc\u30b6\u30fc\u540d"
+                },
+                "data_description": {
+                    "feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u6a5f\u5668\u306e\u8ffd\u8de1\u6a5f\u80fd\u3092\u6709\u52b9\u307e\u305f\u306f\u7121\u52b9\u306b\u3057\u307e\u3059\u3002",
+                    "password": "FRITZ!Box\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3002",
+                    "ssl": "SSL\u3092\u4f7f\u7528\u3057\u3066FRITZ!Box\u306b\u63a5\u7d9a\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                    "username": "FRITZ!Box\u306e\u30e6\u30fc\u30b6\u30fc\u540d\u3067\u3059\u3002FRITZ!Powerline\u30c7\u30d0\u30a4\u30b9\u306f\u3053\u306e\u60c5\u5831\u3092\u7121\u8996\u3057\u3001\u4efb\u610f\u306e\u5024\u3092\u53d7\u3051\u5165\u308c\u307e\u3059\u3002"
+                },
+                "description": "FRITZ!Box Tools\u3092\u767a\u898b\u3057\u307e\u3057\u305f: {name}\n\nFRITZ!Box Tools\u3092\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7\u3057\u3066\u3001 {name} \u3092\u30b3\u30f3\u30c8\u30ed\u30fc\u30eb\u3059\u308b\u3002",
+                "title": "FRITZ!Box Tools\u306e\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "\u30d1\u30b9\u30ef\u30fc\u30c9",
+                    "username": "\u30e6\u30fc\u30b6\u30fc\u540d"
+                },
+                "data_description": {
+                    "password": "FRITZ!Box\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3002",
+                    "username": "FRITZ!Box\u306e\u30e6\u30fc\u30b6\u30fc\u540d\u3067\u3059\u3002FRITZ!Powerline\u30c7\u30d0\u30a4\u30b9\u306f\u3053\u306e\u60c5\u5831\u3092\u7121\u8996\u3057\u3001\u4efb\u610f\u306e\u5024\u3092\u53d7\u3051\u5165\u308c\u307e\u3059\u3002"
+                },
+                "description": "FRITZ!Box Tools\u306e\u8a8d\u8a3c\u3092\u66f4\u65b0\u3057\u307e\u3059: {host}\n\nFRITZ!Box Tools\u304c\u3001FRITZ!Box\u306b\u30ed\u30b0\u30a4\u30f3\u3067\u304d\u307e\u305b\u3093\u3002",
+                "title": "FRITZ!Box\u30c4\u30fc\u30eb - \u8a8d\u8a3c\u60c5\u5831\u306e\u66f4\u65b0"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "\u30db\u30b9\u30c8",
+                    "port": "\u30dd\u30fc\u30c8",
+                    "ssl": "SSL\u8a3c\u660e\u66f8\u3092\u4f7f\u7528\u3059\u308b"
+                },
+                "data_description": {
+                    "host": "FRITZ!Box \u30eb\u30fc\u30bf\u30fc\u306e\u30db\u30b9\u30c8\u540d\u307e\u305f\u306f IP \u30a2\u30c9\u30ec\u30b9\u3002",
+                    "port": "\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u30dd\u30fc\u30c8\u3092\u4f7f\u7528\u3059\u308b\u5834\u5408\u306f\u3001\u7a7a\u6b04\u306e\u307e\u307e\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                    "ssl": "SSL\u3092\u4f7f\u7528\u3057\u3066FRITZ!Box\u306b\u63a5\u7d9a\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+                },
+                "description": "{host}\u306e FRITZ!Box \u30c4\u30fc\u30eb\u69cb\u6210\u3092\u66f4\u65b0\u3057\u307e\u3059\u3002",
+                "title": "FRITZ!Box\u30c4\u30fc\u30eb - \u8a2d\u5b9a\u306e\u66f4\u65b0"
+            },
+            "user": {
+                "data": {
+                    "feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u30c7\u30d0\u30a4\u30b9\u306e\u8ffd\u8de1\u3092\u6709\u52b9\u306b\u3059\u308b",
+                    "host": "\u30db\u30b9\u30c8",
+                    "password": "\u30d1\u30b9\u30ef\u30fc\u30c9",
+                    "port": "\u30dd\u30fc\u30c8",
+                    "ssl": "SSL\u8a3c\u660e\u66f8\u3092\u4f7f\u7528\u3059\u308b",
+                    "username": "\u30e6\u30fc\u30b6\u30fc\u540d"
+                },
+                "data_description": {
+                    "feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u6a5f\u5668\u306e\u8ffd\u8de1\u6a5f\u80fd\u3092\u6709\u52b9\u307e\u305f\u306f\u7121\u52b9\u306b\u3057\u307e\u3059\u3002",
+                    "host": "FRITZ!Box \u30eb\u30fc\u30bf\u30fc\u306e\u30db\u30b9\u30c8\u540d\u307e\u305f\u306f IP \u30a2\u30c9\u30ec\u30b9\u3002",
+                    "password": "FRITZ!Box\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3002",
+                    "port": "\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u30dd\u30fc\u30c8\u3092\u4f7f\u7528\u3059\u308b\u5834\u5408\u306f\u3001\u7a7a\u6b04\u306e\u307e\u307e\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                    "ssl": "SSL\u3092\u4f7f\u7528\u3057\u3066FRITZ!Box\u306b\u63a5\u7d9a\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                    "username": "FRITZ!Box\u306e\u30e6\u30fc\u30b6\u30fc\u540d\u3067\u3059\u3002FRITZ!Powerline\u30c7\u30d0\u30a4\u30b9\u306f\u3053\u306e\u60c5\u5831\u3092\u7121\u8996\u3057\u3001\u4efb\u610f\u306e\u5024\u3092\u53d7\u3051\u5165\u308c\u307e\u3059\u3002"
+                },
+                "description": "FRITZ!Box Tools\u3092\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7\u3057\u3066FRITZ!Box\u3092\u5236\u5fa1\u3057\u307e\u3059\u3002\n\u6700\u4f4e\u9650\u5fc5\u8981\u306a\u3082\u306e: \u30e6\u30fc\u30b6\u30fc\u540d\u3001\u30d1\u30b9\u30ef\u30fc\u30c9\u3002",
+                "title": "FRITZ!Box Tools\u306e\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_connected": {
+                "name": "\u63a5\u7d9a"
+            },
+            "is_linked": {
+                "name": "\u30ea\u30f3\u30af"
+            }
+        },
+        "button": {
+            "cleanup": {
+                "name": "\u30af\u30ea\u30fc\u30f3\u30a2\u30c3\u30d7"
+            },
+            "firmware_update": {
+                "name": "\u30d5\u30a1\u30fc\u30e0\u30a6\u30a7\u30a2\u306e\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8"
+            },
+            "reconnect": {
+                "name": "\u518d\u63a5\u7d9a"
+            }
+        },
+        "sensor": {
+            "connection_uptime": {
+                "name": "\u63a5\u7d9a\u7a3c\u50cd\u6642\u9593"
+            },
+            "external_ip": {
+                "name": "\u5916\u90e8IP"
+            },
+            "external_ipv6": {
+                "name": "\u5916\u90e8IPv6"
+            },
+            "gb_received": {
+                "name": "GB\u3092\u53d7\u4fe1"
+            },
+            "gb_sent": {
+                "name": "GB \u3092\u9001\u4fe1"
+            },
+            "kb_s_received": {
+                "name": "\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u306e\u30b9\u30eb\u30fc\u30d7\u30c3\u30c8"
+            },
+            "kb_s_sent": {
+                "name": "\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u306e\u30b9\u30eb\u30fc\u30d7\u30c3\u30c8"
+            },
+            "link_attenuation_received": {
+                "name": "\u30ea\u30f3\u30af\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u96fb\u529b\u6e1b\u8870"
+            },
+            "link_attenuation_sent": {
+                "name": "\u30ea\u30f3\u30af\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u96fb\u529b\u6e1b\u8870"
+            },
+            "link_kb_s_received": {
+                "name": "\u30ea\u30f3\u30af\u306e\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9 \u30b9\u30eb\u30fc\u30d7\u30c3\u30c8"
+            },
+            "link_kb_s_sent": {
+                "name": "\u30ea\u30f3\u30af\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u306e\u30b9\u30eb\u30fc\u30d7\u30c3\u30c8"
+            },
+            "link_noise_margin_received": {
+                "name": "\u30ea\u30f3\u30af \u30c0\u30a6\u30f3\u30ed\u30fc\u30c9 \u30ce\u30a4\u30ba \u30de\u30fc\u30b8\u30f3"
+            },
+            "link_noise_margin_sent": {
+                "name": "\u30ea\u30f3\u30af\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u306e\u30ce\u30a4\u30ba\u30de\u30fc\u30b8\u30f3"
+            },
+            "max_kb_s_received": {
+                "name": "\u6700\u5927\u63a5\u7d9a\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9 \u30b9\u30eb\u30fc\u30d7\u30c3\u30c8"
+            },
+            "max_kb_s_sent": {
+                "name": "\u6700\u5927\u63a5\u7d9a\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9 \u30b9\u30eb\u30fc\u30d7\u30c3\u30c8"
+            }
+        }
+    },
+    "exceptions": {
+        "config_entry_not_found": {
+            "message": "\u30a2\u30af\u30b7\u30e7\u30f3\u300c {service} \u300d\u3092\u5b9f\u884c\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u30bf\u30fc\u30b2\u30c3\u30c8\u306e\u69cb\u6210\u30a8\u30f3\u30c8\u30ea\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093"
+        },
+        "error_connecting": {
+            "message": "FRITZ!Box \u3078\u306e\u63a5\u7d9a\u30a8\u30e9\u30fc\uff1a {error}"
+        },
+        "error_parse_device_info": {
+            "message": "\u30c7\u30d0\u30a4\u30b9\u60c5\u5831\u306e\u89e3\u6790\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002FRITZ!Box\u306e\u30b7\u30b9\u30c6\u30e0\u30a4\u30d9\u30f3\u30c8\u30ed\u30b0\u3092\u78ba\u8a8d\u3057\u3001\u4e0d\u6b63\u306a\u5f62\u5f0f\u306e\u30c7\u30fc\u30bf\u304c\u306a\u3044\u304b\u78ba\u8a8d\u3057\u305f\u4e0a\u3067\u3001\u30a4\u30d9\u30f3\u30c8\u30ea\u30b9\u30c8\u3092\u30af\u30ea\u30a2\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "error_refresh_hosts_info": {
+            "message": "\u30db\u30b9\u30c8\u60c5\u5831\u306e\u66f4\u65b0\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f"
+        },
+        "error_upnp_disabled": {
+            "message": "FRITZ!Box\u3067\u306fUPnP\u304c\u7121\u52b9\u306b\u306a\u3063\u3066\u3044\u307e\u3059\u3002\u3053\u306e\u9023\u643a\u6a5f\u80fd\u3092\u4f7f\u7528\u3059\u308b\u306b\u306f\u3001UPnP\u3092\u6709\u52b9\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "service_not_supported": {
+            "message": "\u30a2\u30af\u30b7\u30e7\u30f3\u306f\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u3066\u3044\u307e\u305b\u3093"
+        },
+        "service_parameter_unknown": {
+            "message": "\u30a2\u30af\u30b7\u30e7\u30f3\u307e\u305f\u306f\u30d1\u30e9\u30e1\u30fc\u30bf\u304c\u4e0d\u660e\u3067\u3059"
+        },
+        "update_failed": {
+            "message": "\u30c7\u30fc\u30bf\u306e\u66f4\u65b0\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\uff1a {error}"
+        }
+    },
+    "issues": {
+        "deprecated_cleanup_button": {
+            "title": "\u300c\u30af\u30ea\u30fc\u30f3\u30a2\u30c3\u30d7\u300d\u30dc\u30bf\u30f3\u306f\u975e\u63a8\u5968\u3067\u3059"
+        },
+        "deprecated_firmware_update_button": {
+            "description": "\u300c\u30d5\u30a1\u30fc\u30e0\u30a6\u30a7\u30a2\u306e\u66f4\u65b0\u300d\u30dc\u30bf\u30f3\u306f\u975e\u63a8\u5968\u3068\u306a\u308a\u3001Home Assistant Core {removal_version}\u3067\u524a\u9664\u3055\u308c\u308b\u4e88\u5b9a\u3067\u3059\u3002\u3053\u306e\u6a5f\u80fd\u306f\u300cupdate\u300d\u30a8\u30f3\u30c6\u30a3\u30c6\u30a3\u306b\u7f6e\u304d\u63db\u3048\u3089\u308c\u307e\u3057\u305f\u3002\u30aa\u30fc\u30c8\u30e1\u30fc\u30b7\u30e7\u30f3\u3084\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9\u3092\u66f4\u65b0\u3057\u3001\u3053\u306e\u30dc\u30bf\u30f3\u306e\u4f7f\u7528\u3092\u3059\u3079\u3066\u524a\u9664\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+            "title": "\u300c\u30d5\u30a1\u30fc\u30e0\u30a6\u30a7\u30a2\u306e\u66f4\u65b0\u300d\u30dc\u30bf\u30f3\u306f\u975e\u63a8\u5968\u3068\u306a\u308a\u307e\u3057\u305f"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "'\u30db\u30fc\u30e0' \u3067\u30c7\u30d0\u30a4\u30b9\u3092\u691c\u8a0e\u3059\u308b\u79d2\u6570",
+                    "feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u30c7\u30d0\u30a4\u30b9\u306e\u8ffd\u8de1\u3092\u6709\u52b9\u306b\u3059\u308b",
+                    "old_discovery": "\u53e4\u3044\u691c\u51fa\u65b9\u6cd5\u3092\u6709\u52b9\u306b\u3059\u308b"
+                },
+                "data_description": {
+                    "consider_home": "\u30c7\u30d0\u30a4\u30b9\u304c\u81ea\u5b85\u306b\u3042\u308b\u3068\u5224\u65ad\u3059\u308b\u6642\u9593\uff08\u79d2\uff09\u3002\u30c7\u30d5\u30a9\u30eb\u30c8\u306f180\u79d2\u3067\u3059\u3002",
+                    "feature_device_tracking": "\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u6a5f\u5668\u306e\u8ffd\u8de1\u6a5f\u80fd\u3092\u6709\u52b9\u307e\u305f\u306f\u7121\u52b9\u306b\u3057\u307e\u3059\u3002",
+                    "old_discovery": "\u53e4\u3044\u691c\u51fa\u65b9\u6cd5\u3092\u6709\u52b9\u306b\u3057\u307e\u3059\u3002\u3053\u308c\u306f\u3044\u304f\u3064\u304b\u306e\u30b7\u30ca\u30ea\u30aa\u3067\u5fc5\u8981\u3067\u3059\u3002"
+                }
+            }
+        }
+    },
+    "services": {
+        "dial": {
+            "fields": {
+                "device_id": {
+                    "description": "\u767a\u4fe1\u5143\u3068\u306a\u308bFRITZ!Box\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                    "name": "FRITZ!Box \u30c7\u30d0\u30a4\u30b9"
+                },
+                "max_ring_seconds": {
+                    "description": "\u767a\u4fe1\u5f8c\u3001\u7740\u4fe1\u97f3\u304c\u9cf4\u308a\u7d9a\u3051\u308b\u6700\u5927\u79d2\u6570\u3002",
+                    "name": "\u547c\u3073\u51fa\u3057\u6700\u5927\u6642\u9593"
+                },
+                "number": {
+                    "description": "\u30c0\u30a4\u30e4\u30eb\u3059\u308b\u96fb\u8a71\u756a\u53f7\u3002",
+                    "name": "\u96fb\u8a71\u756a\u53f7"
+                }
+            },
+            "name": "\u96fb\u8a71\u756a\u53f7\u3092\u30c0\u30a4\u30e4\u30eb"
+        },
+        "set_guest_wifi_password": {
+            "description": "\u30b2\u30b9\u30c8 Wi-Fi \u306e\u65b0\u3057\u3044\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002\u30d1\u30b9\u30ef\u30fc\u30c9\u306e\u9577\u3055\u306f 8 \uff5e 63 \u6587\u5b57\u306b\u3059\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059\u3002\u8ffd\u52a0\u306e\u30d1\u30e9\u30e1\u30fc\u30bf\u304c\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u306a\u3044\u5834\u5408\u3001\u30d1\u30b9\u30ef\u30fc\u30c9\u306f 12 \u6587\u5b57\u306e\u9577\u3055\u3067\u81ea\u52d5\u751f\u6210\u3055\u308c\u307e\u3059\u3002",
+            "fields": {
+                "device_id": {
+                    "description": "\u8a2d\u5b9a\u3059\u308bFRITZ!Box\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+                    "name": "FRITZ!Box \u30c7\u30d0\u30a4\u30b9"
+                },
+                "length": {
+                    "description": "\u65b0\u3057\u3044\u30d1\u30b9\u30ef\u30fc\u30c9\u306e\u9577\u3055\u3002\u30d1\u30b9\u30ef\u30fc\u30c9\u304c\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u306a\u3044\u5834\u5408\u306f\u3001\u81ea\u52d5\u751f\u6210\u3055\u308c\u307e\u3059\u3002",
+                    "name": "\u30d1\u30b9\u30ef\u30fc\u30c9\u306e\u9577\u3055"
+                },
+                "password": {
+                    "description": "\u30b2\u30b9\u30c8 Wi-Fi \u306e\u65b0\u3057\u3044\u30d1\u30b9\u30ef\u30fc\u30c9\u3002",
+                    "name": "\u30d1\u30b9\u30ef\u30fc\u30c9"
+                }
+            },
+            "name": "\u30b2\u30b9\u30c8 Wi-Fi \u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u8a2d\u5b9a\u3059\u308b"
+        }
+    }
+}

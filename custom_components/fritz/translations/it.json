@@ -1,0 +1,244 @@
+{
+  "common": {
+    "data_description_feature_device_tracking": "Abilita o disabilita la funzionalità di tracciamento dei dispositivi di rete.",
+    "data_description_host": "Il nome host o l'indirizzo IP del router FRITZ!Box.",
+    "data_description_password": "Password per il FRITZ!Box.",
+    "data_description_port": "Lasciare vuoto per utilizzare la porta predefinita.",
+    "data_description_ssl": "Utilizzare SSL per connettersi al FRITZ!Box.",
+    "data_feature_device_tracking": "Abilita il monitoraggio dei dispositivi di rete"
+  },
+  "config": {
+    "abort": {
+      "already_configured": "Il dispositivo è già configurato",
+      "already_in_progress": "La configurazione è già in corso. Completa quella attuale prima di iniziarne un’altra.",
+      "ignore_ip6_link_local": "L'indirizzo locale del collegamento IPv6 non è supportato."
+    },
+    "error": {
+      "already_configured": "Il dispositivo è già configurato",
+      "already_in_progress": "La configurazione è già in corso. Completa quella attuale prima di iniziarne un’altra.",
+      "cannot_connect": "Impossibile connettersi",
+      "invalid_auth": "Autenticazione non valida",
+      "unknown_error": "Errore imprevisto",
+      "upnp_not_configured": "Impostazioni UPnP mancanti sul dispositivo."
+    },
+    "flow_title": "{name}",
+    "step": {
+      "confirm": {
+        "data": {
+          "feature_device_tracking": "Abilita il monitoraggio dei dispositivi di rete",
+          "password": "Password",
+          "ssl": "Utilizza un certificato SSL",
+          "username": "Nome utente"
+        },
+        "data_description": {
+          "feature_device_tracking": "Abilita o disabilita la funzionalità di tracciamento dei dispositivi di rete.",
+          "password": "Password per il FRITZ!Box.",
+          "ssl": "Utilizzare SSL per connettersi al FRITZ!Box."
+        },
+        "description": "FRITZ!Box rilevato: {name} \n\nConfigura gli strumenti di FRITZ!Box per controllare il tuo {name}",
+        "title": "Configura gli strumenti di FRITZ!Box"
+      },
+      "reauth_confirm": {
+        "data": {
+          "password": "Password",
+          "username": "Nome utente"
+        },
+        "data_description": {
+          "password": "Password per il FRITZ!Box."
+        },
+        "description": "Aggiorna le credenziali di FRITZ!Box Tools per: {host} . \n\n FRITZ!Box Tools non riesce ad accedere al tuo FRITZ! Box."
+      },
+      "reconfigure": {
+        "data": {
+          "host": "Host",
+          "port": "Porta",
+          "ssl": "Utilizza un certificato SSL"
+        },
+        "data_description": {
+          "ssl": "Utilizzare SSL per connettersi al FRITZ!Box."
+        },
+        "description": "Aggiorna la configurazione degli strumenti FRITZ!Box per: {host}."
+      },
+      "user": {
+        "data": {
+          "feature_device_tracking": "Abilita il monitoraggio dei dispositivi di rete",
+          "host": "Host",
+          "password": "Password",
+          "port": "Porta",
+          "ssl": "Utilizza un certificato SSL",
+          "username": "Nome utente"
+        },
+        "data_description": {
+          "feature_device_tracking": "Abilita o disabilita la funzionalità di tracciamento dei dispositivi di rete.",
+          "host": "Il nome host o l'indirizzo IP del router FRITZ!Box.",
+          "password": "Password per il FRITZ!Box.",
+          "port": "Lasciare vuoto per utilizzare la porta predefinita.",
+          "ssl": "Utilizzare SSL per connettersi al FRITZ!Box."
+        },
+        "description": "Configura gli strumenti di FRITZ!Box per controllare il tuo FRITZ!Box.\nMinimo necessario: nome utente, password.",
+        "title": "Configura gli strumenti di FRITZ!Box"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "is_connected": {
+        "name": "Connessione"
+      },
+      "is_linked": {
+        "name": "Collegamento"
+      }
+    },
+    "button": {
+      "cleanup": {
+        "name": "Pulizia"
+      },
+      "firmware_update": {
+        "name": "Aggiornamento del firmware"
+      },
+      "reconnect": {
+        "name": "Riconnetti"
+      },
+      "wake_on_lan": {
+        "name": "Wake on LAN"
+      }
+    },
+    "sensor": {
+      "connection_uptime": {
+        "name": "Tempo di attività della connessione"
+      },
+      "cpu_temperature": {
+        "name": "Temperatura CPU"
+      },
+      "external_ip": {
+        "name": "IP esterno"
+      },
+      "external_ipv6": {
+        "name": "IPv6 esterno"
+      },
+      "gb_received": {
+        "name": "GB ricevuti"
+      },
+      "gb_sent": {
+        "name": "GB inviati"
+      },
+      "kb_s_received": {
+        "name": "Velocità effettiva di scaricamento"
+      },
+      "kb_s_sent": {
+        "name": "Velocità effettiva di caricamento"
+      },
+      "link_attenuation_received": {
+        "name": "Attenuazione della potenza di scaricamento del collegamento"
+      },
+      "link_attenuation_sent": {
+        "name": "Attenuazione della potenza di caricamento del collegamento"
+      },
+      "link_kb_s_received": {
+        "name": "Velocità effettiva di scaricamento del collegamento"
+      },
+      "link_kb_s_sent": {
+        "name": "Velocità effettiva di caricamento del collegamento"
+      },
+      "link_noise_margin_received": {
+        "name": "Margine di rumore di scaricamento del collegamento"
+      },
+      "link_noise_margin_sent": {
+        "name": "Margine del rumore di caricamento del collegamento"
+      },
+      "max_kb_s_received": {
+        "name": "Velocità massima di scaricamento della connessione"
+      },
+      "max_kb_s_sent": {
+        "name": "Velocità massima di caricamento della connessione"
+      }
+    },
+    "switch": {
+      "internet_access": {
+        "name": "Accesso a Internet"
+      }
+    }
+  },
+  "exceptions": {
+    "config_entry_not_found": {
+      "message": "Impossibile eseguire l'azione \"{service}\". Voce di configurazione per la destinazione non trovata"
+    },
+    "error_parse_device_info": {
+      "message": "Errore durante l'analisi delle informazioni del dispositivo. Si prega di controllare il registro eventi di sistema del FRITZ!Box per individuare dati non validi e cancellare l'elenco degli eventi."
+    },
+    "error_refresh_hosts_info": {
+      "message": "Errore durante l'aggiornamento delle informazioni sugli host"
+    },
+    "service_dial_failed": {
+      "message": "Impossibile effettuare la chiamata, verificare se il servizio \"clicca per chiamare\" del FRITZ!Box è attivato."
+    },
+    "update_failed": {
+      "message": "Errore durante l'aggiornamento dei dati: {error}"
+    }
+  },
+  "issues": {
+    "deprecated_cleanup_button": {
+      "description": "Il pulsante \"Pulizia\" è obsoleto e verrà rimosso in Home Assistant Core. {removal_version}Aggiorna le tue automazioni e dashboard per rimuovere qualsiasi utilizzo di questo pulsante. L'azione viene ora eseguita automaticamente a ogni aggiornamento dei dati.",
+      "title": "Il pulsante 'Pulizia' è obsoleto"
+    },
+    "deprecated_firmware_update_button": {
+      "description": "Il pulsante \"Aggiornamento firmware\" è obsoleto e verrà rimosso in Home Assistant Core. {removal_version}È stato sostituito da un'entità di aggiornamento. Aggiorna le tue automazioni e dashboard per rimuovere qualsiasi utilizzo di questo pulsante.",
+      "title": "Il pulsante \"Aggiornamento firmware\" è obsoleto."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "add_new_devices": "Aggiungi automaticamente i nuovi dispositivi",
+          "consider_home": "Secondi per considerare un dispositivo \"a casa\"",
+          "deselect_all": "Togli tutte le spunte",
+          "feature_device_tracking": "Abilita il monitoraggio dei dispositivi di rete",
+          "old_discovery": "Abilita il vecchio metodo di rilevamento",
+          "tracked_devices": "Dispositivi di rete da integrare"
+        },
+        "data_description": {
+          "add_new_devices": "Se attivo, i dispositivi che compariranno in rete in futuro vengono aggiunti da soli. Se disattivo, vengono integrati solo i dispositivi selezionati qui sotto.",
+          "consider_home": "Tempo in secondi per considerare un dispositivo in casa. Il valore predefinito è 180 secondi.",
+          "deselect_all": "Spunta questa casella e premi Invia: l'elenco qui sotto si riapre tutto vuoto, senza salvare niente. Poi spunta i dispositivi che ti servono e premi di nuovo Invia.",
+          "feature_device_tracking": "Abilita o disabilita la funzionalità di tracciamento dei dispositivi di rete.",
+          "old_discovery": "Abilita il vecchio metodo di individuazione. Questa opzione è necessaria in alcuni scenari.",
+          "tracked_devices": "Solo i dispositivi selezionati hanno il tracker di presenza, l'interruttore di accesso a Internet e il pulsante Wake on LAN. I dispositivi deselezionati vengono rimossi da Home Assistant insieme alle loro entità."
+        }
+      }
+    }
+  },
+  "services": {
+    "dial": {
+      "description": "Fa sì che il FRITZ!Box componga un numero di telefono.",
+      "fields": {
+        "device_id": {
+          "description": "Selezionare il FRITZ!Box da cui effettuare la chiamata.",
+          "name": "Dispositivo FRITZ!Box"
+        },
+        "max_ring_seconds": {
+          "description": "Numero massimo di secondi di squillo dopo la composizione del numero.",
+          "name": "Durata massima dello squillo"
+        },
+        "number": {
+          "description": "Il numero di telefono da comporre.",
+          "name": "Numero di telefono"
+        }
+      },
+      "name": "Comporre un numero di telefono"
+    },
+    "set_guest_wifi_password": {
+      "description": "Imposta una nuova password per il Wi-Fi ospite. La password deve avere una lunghezza compresa tra 8 e 63 caratteri. Se non viene impostato alcun parametro aggiuntivo, la password verrà generata automaticamente con una lunghezza di 12 caratteri.",
+      "fields": {
+        "length": {
+          "name": "Lunghezza della password"
+        },
+        "password": {
+          "description": "Nuova password per il Wi-Fi ospite.",
+          "name": "Password"
+        }
+      },
+      "name": "Imposta password Wi-Fi ospite"
+    }
+  }
+}

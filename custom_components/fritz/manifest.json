@@ -1,0 +1,35 @@
+{
+  "domain": "fritz",
+  "name": "FRITZ!Box Tools",
+  "categories": [
+    "computers_network.routers_network",
+    "presence_location.network_presence"
+  ],
+  "codeowners": [
+    "@bigurka"
+  ],
+  "config_flow": true,
+  "connectivity": [
+    "network"
+  ],
+  "dependencies": [
+    "network"
+  ],
+  "documentation": "https://github.com/bigurka/ha-fritz-device-selection",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "loggers": [
+    "fritzconnection"
+  ],
+  "requirements": [
+    "fritzconnection[qr]==1.15.1",
+    "xmltodict==1.0.4"
+  ],
+  "ssdp": [
+    {
+      "st": "urn:schemas-upnp-org:device:fritzbox:1"
+    }
+  ],
+  "issue_tracker": "https://github.com/bigurka/ha-fritz-device-selection/issues",
+  "version": "2026.11.0.2"
+}

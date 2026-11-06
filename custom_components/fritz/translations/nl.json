@@ -1,0 +1,141 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Apparaat is al geconfigureerd",
+            "already_in_progress": "Dit wordt momenteel al geconfigureerd. Rond de huidige configuratie eerst af voordat je opnieuw begint.",
+            "ignore_ip6_link_local": "Lokaal IPv6-linkadres wordt niet ondersteund."
+        },
+        "error": {
+            "already_configured": "Apparaat is al geconfigureerd",
+            "already_in_progress": "Dit wordt momenteel al geconfigureerd. Rond de huidige configuratie eerst af voordat je opnieuw begint.",
+            "cannot_connect": "Kan geen verbinding maken",
+            "invalid_auth": "Ongeldige authenticatie",
+            "unknown_error": "Onverwachte fout",
+            "upnp_not_configured": "Ontbrekende UPnP instellingen op apparaat."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "data": {
+                    "password": "Wachtwoord",
+                    "ssl": "Maakt gebruik van een SSL-certificaat",
+                    "username": "Gebruikersnaam"
+                },
+                "description": "Ontdekte FRITZ!Box: {name}\n\nStel FRITZ!box Tools in om {name} te beheren",
+                "title": "FRITZ!Box Tools instellen"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Wachtwoord",
+                    "username": "Gebruikersnaam"
+                },
+                "description": "Update FRITZ! Box Tools-inloggegevens voor: {host}. \n\n FRITZ! Box Tools kan niet inloggen op je FRITZ!Box.",
+                "title": "FRITZ!Box Tools - Inloggegevens bijwerken"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Poort",
+                    "ssl": "Maakt gebruik van een SSL-certificaat"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Wachtwoord",
+                    "port": "Poort",
+                    "ssl": "Maakt gebruik van een SSL-certificaat",
+                    "username": "Gebruikersnaam"
+                },
+                "description": "Stel FRITZ!Box Tools in om je FRITZ!Box te bedienen.\nMinimaal nodig: gebruikersnaam, wachtwoord.",
+                "title": "FRITZ!Box Tools instellen"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_connected": {
+                "name": "Verbinding"
+            },
+            "is_linked": {
+                "name": "Link"
+            }
+        },
+        "button": {
+            "cleanup": {
+                "name": "Opruimen"
+            },
+            "firmware_update": {
+                "name": "Firmware-update"
+            },
+            "reconnect": {
+                "name": "Opnieuw verbinden"
+            }
+        },
+        "sensor": {
+            "connection_uptime": {
+                "name": "Bedrijfstijd van verbinding"
+            },
+            "cpu_temperature": {
+                "name": "CPU temperatuur"
+            },
+            "external_ip": {
+                "name": "Externe IP"
+            },
+            "external_ipv6": {
+                "name": "Externe IPv6"
+            },
+            "gb_received": {
+                "name": "GB ontvangen"
+            },
+            "gb_sent": {
+                "name": "GB verzonden"
+            },
+            "kb_s_received": {
+                "name": "Downloadsnelheid"
+            },
+            "kb_s_sent": {
+                "name": "Uploadsnelheid"
+            }
+        }
+    },
+    "exceptions": {
+        "service_not_supported": {
+            "message": "Actie niet ondersteund"
+        }
+    },
+    "issues": {
+        "deprecated_firmware_update_button": {
+            "description": "De knop 'Firmware-update' wordt uitgefaseerd en verwijderd in Home Assistant Core {removal_version}. Deze is vervangen door een update-entiteit. Werk de automatiseringen en dashboards bij om elk gebruik van deze knop te verwijderen.",
+            "title": "De knop 'Firmware-update' wordt uitgefaseerd"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "Seconden om een apparaat als \"thuis\" te beschouwen",
+                    "old_discovery": "Schakel oude discovery-methode in"
+                }
+            }
+        }
+    },
+    "services": {
+        "set_guest_wifi_password": {
+            "description": "Hiermee stel je een nieuw wachtwoord in voor het gasten wifi-netwerk. Het wachtwoord moet tussen de 8 en 63 tekens lang zijn. Als er niets wordt ingevuld, wordt er automatisch een wachtwoord met een lengte van 12 tekens gegenereerd.",
+            "fields": {
+                "device_id": {
+                    "name": "FRITZ!Box-apparaat"
+                },
+                "length": {
+                    "name": "Wachtwoordlengte"
+                },
+                "password": {
+                    "description": "Nieuw wachtwoord voor het gasten wifi-netwerk.",
+                    "name": "Wachtwoord"
+                }
+            },
+            "name": "Stel het wifi-wachtwoord voor gasten in"
+        }
+    }
+}

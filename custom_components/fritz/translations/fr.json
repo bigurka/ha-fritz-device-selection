@@ -1,0 +1,263 @@
+{
+    "common": {
+        "data_description_feature_device_tracking": "Active ou d\u00e9sactive la fonction de suivi des appareils r\u00e9seau.",
+        "data_description_host": "Le nom d'h\u00f4te ou l'adresse IP de votre routeur FRITZ!Box.",
+        "data_description_password": "Mot de passe pour la FRITZ!Box.",
+        "data_description_port": "Laissez vide pour utiliser le port par d\u00e9faut.",
+        "data_description_ssl": "Utiliser SSL pour se connecter \u00e0 la FRITZ!Box.",
+        "data_description_username": "Nom d'utilisateur pour la FRITZ!Box. Les appareils FRITZ!Powerline ignorent cette information et acceptent n'importe quelle valeur.",
+        "data_feature_device_tracking": "Activer le suivi des appareils r\u00e9seau"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "L'appareil est d\u00e9j\u00e0 configur\u00e9",
+            "already_in_progress": "La configuration est d\u00e9j\u00e0 en cours. Veuillez terminer la configuration actuelle avant de recommencer.",
+            "ignore_ip6_link_local": "Les adresses IPv6 de liaison locale ne sont pas prises en charge."
+        },
+        "error": {
+            "already_configured": "L'appareil est d\u00e9j\u00e0 configur\u00e9",
+            "already_in_progress": "La configuration est d\u00e9j\u00e0 en cours. Veuillez terminer la configuration actuelle avant de recommencer.",
+            "cannot_connect": "\u00c9chec de la connexion",
+            "invalid_auth": "Authentification non valide",
+            "unknown_error": "Erreur inattendue",
+            "upnp_not_configured": "Param\u00e8tres UPnP manquants sur l'appareil."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "data": {
+                    "feature_device_tracking": "Activer le suivi des appareils r\u00e9seau",
+                    "password": "Mot de passe",
+                    "ssl": "Utilise un certificat SSL",
+                    "username": "Nom d'utilisateur"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Active ou d\u00e9sactive la fonction de suivi des appareils r\u00e9seau.",
+                    "password": "Mot de passe pour la FRITZ!Box.",
+                    "ssl": "Utiliser SSL pour se connecter \u00e0 la FRITZ!Box.",
+                    "username": "Nom d'utilisateur pour la FRITZ!Box. Les appareils FRITZ!Powerline ignorent cette information et acceptent n'importe quelle valeur."
+                },
+                "description": "FRITZ!Box d\u00e9couvert\u00a0: {name}\n\nConfiguration de FRITZ!Box Tools pour contr\u00f4ler votre {name}",
+                "title": "Configuration FRITZ!Box Tools"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Mot de passe",
+                    "username": "Nom d'utilisateur"
+                },
+                "data_description": {
+                    "password": "Mot de passe pour la FRITZ!Box.",
+                    "username": "Nom d'utilisateur pour la FRITZ!Box. Les appareils FRITZ!Powerline ignorent cette information et acceptent n'importe quelle valeur."
+                },
+                "description": "Mettre \u00e0 jour les informations d'identification FRITZ!Box Tools pour\u00a0: {host}.\n\nFRITZ!Box Tools ne parvient pas \u00e0 se connecter \u00e0 votre FRITZ!Box.",
+                "title": "FRITZ!Box Tools - Mise \u00e0 jour des informations d'identification"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "H\u00f4te",
+                    "port": "Port",
+                    "ssl": "Utilise un certificat SSL"
+                },
+                "data_description": {
+                    "host": "Le nom d'h\u00f4te ou l'adresse IP de votre routeur FRITZ!Box.",
+                    "port": "Laissez vide pour utiliser le port par d\u00e9faut.",
+                    "ssl": "Utiliser SSL pour se connecter \u00e0 la FRITZ!Box."
+                },
+                "description": "Mettre \u00e0 jour la configuration de FRITZ!Box Tools pour\u00a0: {host}.",
+                "title": "FRITZ!Box Tools - Mettre \u00e0 jour la configuration"
+            },
+            "user": {
+                "data": {
+                    "feature_device_tracking": "Activer le suivi des appareils r\u00e9seau",
+                    "host": "H\u00f4te",
+                    "password": "Mot de passe",
+                    "port": "Port",
+                    "ssl": "Utilise un certificat SSL",
+                    "username": "Nom d'utilisateur"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Active ou d\u00e9sactive la fonction de suivi des appareils r\u00e9seau.",
+                    "host": "Le nom d'h\u00f4te ou l'adresse IP de votre routeur FRITZ!Box.",
+                    "password": "Mot de passe pour la FRITZ!Box.",
+                    "port": "Laissez vide pour utiliser le port par d\u00e9faut.",
+                    "ssl": "Utiliser SSL pour se connecter \u00e0 la FRITZ!Box.",
+                    "username": "Nom d'utilisateur pour la FRITZ!Box. Les appareils FRITZ!Powerline ignorent cette information et acceptent n'importe quelle valeur."
+                },
+                "description": "Configurer FRITZ!Box Tools pour contr\u00f4ler votre FRITZ!Box.\nMinimum requis\u00a0: nom d'utilisateur, mot de passe.",
+                "title": "Configuration FRITZ!Box Tools"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_connected": {
+                "name": "Connexion"
+            },
+            "is_linked": {
+                "name": "Liaison"
+            }
+        },
+        "button": {
+            "cleanup": {
+                "name": "Nettoyer"
+            },
+            "firmware_update": {
+                "name": "Mise \u00e0 jour du micrologiciel"
+            },
+            "reconnect": {
+                "name": "Reconnecter"
+            },
+            "wake_on_lan": {
+                "name": "Wake on LAN"
+            }
+        },
+        "sensor": {
+            "connection_uptime": {
+                "name": "Dur\u00e9e de connexion"
+            },
+            "cpu_temperature": {
+                "name": "Temp\u00e9rature du processeur"
+            },
+            "external_ip": {
+                "name": "IP externe"
+            },
+            "external_ipv6": {
+                "name": "IPv6 externe"
+            },
+            "gb_received": {
+                "name": "Go re\u00e7us"
+            },
+            "gb_sent": {
+                "name": "Go envoy\u00e9s"
+            },
+            "kb_s_received": {
+                "name": "D\u00e9bit de t\u00e9l\u00e9chargement"
+            },
+            "kb_s_sent": {
+                "name": "D\u00e9bit de t\u00e9l\u00e9versement"
+            },
+            "link_attenuation_received": {
+                "name": "Att\u00e9nuation de puissance descendante de la liaison"
+            },
+            "link_attenuation_sent": {
+                "name": "Att\u00e9nuation de puissance montante de la liaison"
+            },
+            "link_kb_s_received": {
+                "name": "D\u00e9bit descendant de la liaison"
+            },
+            "link_kb_s_sent": {
+                "name": "D\u00e9bit montant de la liaison"
+            },
+            "link_noise_margin_received": {
+                "name": "Marge de bruit descendante de la liaison"
+            },
+            "link_noise_margin_sent": {
+                "name": "Marge de bruit montante de la liaison"
+            },
+            "max_kb_s_received": {
+                "name": "D\u00e9bit descendant maximal de la connexion"
+            },
+            "max_kb_s_sent": {
+                "name": "D\u00e9bit montant maximal de la connexion"
+            }
+        },
+        "switch": {
+            "internet_access": {
+                "name": "Acc\u00e8s Internet"
+            }
+        }
+    },
+    "exceptions": {
+        "config_entry_not_found": {
+            "message": "\u00c9chec de l'ex\u00e9cution de l'action \u00ab\u00a0{service}\u00a0\u00bb. Entr\u00e9e de configuration de la cible introuvable"
+        },
+        "error_connecting": {
+            "message": "Erreur de connexion \u00e0 la FRITZ!Box : {error}"
+        },
+        "error_parse_device_info": {
+            "message": "Erreur lors de l'analyse des informations de l'appareil. Veuillez v\u00e9rifier le journal des \u00e9v\u00e9nements syst\u00e8me de votre FRITZ!Box pour y d\u00e9tecter des donn\u00e9es malform\u00e9es, puis videz la liste des \u00e9v\u00e9nements."
+        },
+        "error_refresh_hosts_info": {
+            "message": "Erreur lors de l'actualisation des informations des h\u00f4tes"
+        },
+        "error_upnp_disabled": {
+            "message": "L'UPnP est d\u00e9sactiv\u00e9 sur la FRITZ!Box. Veuillez activer l'UPnP pour utiliser cette int\u00e9gration."
+        },
+        "service_dial_failed": {
+            "message": "\u00c9chec de l'appel, v\u00e9rifiez que le service de num\u00e9rotation par clic de la FRITZ!Box est activ\u00e9"
+        },
+        "service_not_supported": {
+            "message": "Action non prise en charge"
+        },
+        "service_parameter_unknown": {
+            "message": "Action ou param\u00e8tre inconnu"
+        },
+        "update_failed": {
+            "message": "Erreur lors de la mise \u00e0 jour des donn\u00e9es\u00a0: {error}"
+        }
+    },
+    "issues": {
+        "deprecated_cleanup_button": {
+            "description": "Le bouton \u00ab Cleanup \u00bb est obsol\u00e8te et sera supprim\u00e9 dans Home Assistant Core {removal_version}. Veuillez mettre \u00e0 jour vos automatisations et tableaux de bord pour supprimer toute utilisation de ce bouton. L'action est d\u00e9sormais effectu\u00e9e automatiquement \u00e0 chaque actualisation des donn\u00e9es.",
+            "title": "Le bouton \u00ab Cleanup \u00bb est obsol\u00e8te"
+        },
+        "deprecated_firmware_update_button": {
+            "description": "Le bouton de \u00ab\u00a0mise \u00e0 jour du micrologiciel\u00a0\u00bb est obsol\u00e8te et sera supprim\u00e9 dans Home Assistant Core {removal_version}. Il a \u00e9t\u00e9 remplac\u00e9 par une entit\u00e9 de mise \u00e0 jour. Veuillez modifier vos automatisations et tableaux de bord pour supprimer ce bouton.",
+            "title": "Le bouton de \u00ab\u00a0mise \u00e0 jour du micrologiciel\u00a0\u00bb est obsol\u00e8te"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "Secondes pour consid\u00e9rer un appareil \u00e0 la \u00ab\u00a0maison\u00a0\u00bb",
+                    "feature_device_tracking": "Activer le suivi des appareils r\u00e9seau",
+                    "old_discovery": "Activer l'ancienne m\u00e9thode de d\u00e9couverte"
+                },
+                "data_description": {
+                    "consider_home": "Dur\u00e9e en secondes pour consid\u00e9rer un appareil comme pr\u00e9sent. La valeur par d\u00e9faut est de 180 secondes.",
+                    "feature_device_tracking": "Active ou d\u00e9sactive la fonction de suivi des appareils r\u00e9seau.",
+                    "old_discovery": "Activer l'ancienne m\u00e9thode de d\u00e9couverte. Cela est n\u00e9cessaire dans certains cas."
+                }
+            }
+        }
+    },
+    "services": {
+        "dial": {
+            "description": "Fait composer un num\u00e9ro de t\u00e9l\u00e9phone par la FRITZ!Box.",
+            "fields": {
+                "device_id": {
+                    "description": "S\u00e9lectionnez la FRITZ!Box \u00e0 utiliser pour composer.",
+                    "name": "Appareil FRITZ!Box"
+                },
+                "max_ring_seconds": {
+                    "description": "Le nombre maximal de secondes de sonnerie apr\u00e8s la composition.",
+                    "name": "Dur\u00e9e de sonnerie maximale"
+                },
+                "number": {
+                    "description": "Le num\u00e9ro de t\u00e9l\u00e9phone \u00e0 composer.",
+                    "name": "Num\u00e9ro de t\u00e9l\u00e9phone"
+                }
+            },
+            "name": "Composer un num\u00e9ro de t\u00e9l\u00e9phone"
+        },
+        "set_guest_wifi_password": {
+            "description": "D\u00e9finit un nouveau mot de passe pour le Wi-Fi invit\u00e9. Le mot de passe doit comporter entre 8 et 63 caract\u00e8res. Si aucun param\u00e8tre suppl\u00e9mentaire n'est d\u00e9fini, le mot de passe sera g\u00e9n\u00e9r\u00e9 automatiquement avec une longueur de 12 caract\u00e8res.",
+            "fields": {
+                "device_id": {
+                    "description": "S\u00e9lectionnez la FRITZ!Box \u00e0 configurer.",
+                    "name": "Appareil FRITZ!Box"
+                },
+                "length": {
+                    "description": "Longueur du nouveau mot de passe. Il sera g\u00e9n\u00e9r\u00e9 automatiquement si aucun mot de passe n'est d\u00e9fini.",
+                    "name": "Longueur du mot de passe"
+                },
+                "password": {
+                    "description": "Nouveau mot de passe pour le Wi-Fi invit\u00e9.",
+                    "name": "Mot de passe"
+                }
+            },
+            "name": "D\u00e9finir le mot de passe Wi-Fi invit\u00e9"
+        }
+    }
+}

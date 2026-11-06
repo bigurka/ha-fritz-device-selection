@@ -1,0 +1,276 @@
+{
+    "common": {
+        "data_description_feature_device_tracking": "Habilitar o deshabilitar la funci\u00f3n de seguimiento de dispositivos de red.",
+        "data_description_host": "El nombre de host o la direcci\u00f3n IP de tu router FRITZ!Box.",
+        "data_description_password": "Contrase\u00f1a para el FRITZ!Box.",
+        "data_description_port": "D\u00e9jalo en blanco para utilizar el puerto predeterminado.",
+        "data_description_ssl": "Utilizar SSL para conectar a tu FRITZ!Box.",
+        "data_description_username": "Nombre de usuario para el FRITZ!Box. Los dispositivos FRITZ!Powerline ignoran esta informaci\u00f3n y aceptan cualquier valor.",
+        "data_feature_device_tracking": "Habilitar el seguimiento de dispositivos de red"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado",
+            "already_in_progress": "Esto ya se est\u00e1 configurando. Finaliza la configuraci\u00f3n existente antes de volver a empezar.",
+            "ignore_ip6_link_local": "La direcci\u00f3n de enlace local IPv6 no es compatible.",
+            "not_supported": "Este dispositivo no admite la API TR-064."
+        },
+        "error": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado",
+            "already_in_progress": "Esto ya se est\u00e1 configurando. Finaliza la configuraci\u00f3n existente antes de volver a empezar.",
+            "cannot_connect": "No se pudo conectar",
+            "invalid_auth": "Autenticaci\u00f3n no v\u00e1lida",
+            "unknown_error": "Error inesperado",
+            "upnp_not_configured": "Falta la configuraci\u00f3n de UPnP en el dispositivo."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "data": {
+                    "feature_device_tracking": "Habilitar el seguimiento de dispositivos de red",
+                    "password": "Contrase\u00f1a",
+                    "ssl": "Utiliza un certificado SSL",
+                    "username": "Nombre de usuario"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Habilitar o deshabilitar la funci\u00f3n de seguimiento de dispositivos de red.",
+                    "password": "Contrase\u00f1a para el FRITZ!Box.",
+                    "ssl": "Utilizar SSL para conectar a tu FRITZ!Box.",
+                    "username": "Nombre de usuario para el FRITZ!Box. Los dispositivos FRITZ!Powerline ignoran esta informaci\u00f3n y aceptan cualquier valor."
+                },
+                "description": "FRITZ!Box: {name} encontrado\n\nConfigura FRITZ!Box Tools para controlar tu {name}",
+                "title": "Configurar FRITZ!Box Tools"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrase\u00f1a",
+                    "username": "Nombre de usuario"
+                },
+                "data_description": {
+                    "password": "Contrase\u00f1a para el FRITZ!Box.",
+                    "username": "Nombre de usuario para el FRITZ!Box. Los dispositivos FRITZ!Powerline ignoran esta informaci\u00f3n y aceptan cualquier valor."
+                },
+                "description": "Actualiza las credenciales de FRITZ!Box Tools para: {host}. \n\nFRITZ!Box Tools no puede iniciar sesi\u00f3n en tu FRITZ!Box.",
+                "title": "Herramientas de FRITZ!Box - Actualizar credenciales"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Puerto",
+                    "ssl": "Utiliza un certificado SSL"
+                },
+                "data_description": {
+                    "host": "El nombre de host o la direcci\u00f3n IP de tu router FRITZ!Box.",
+                    "port": "D\u00e9jalo en blanco para utilizar el puerto predeterminado.",
+                    "ssl": "Utilizar SSL para conectar a tu FRITZ!Box."
+                },
+                "description": "Actualizar la configuraci\u00f3n de FRITZ!Box Tools para: {host}.",
+                "title": "Herramientas de FRITZ!Box - Actualizar configuraci\u00f3n"
+            },
+            "user": {
+                "data": {
+                    "feature_device_tracking": "Habilitar el seguimiento de dispositivos de red",
+                    "host": "Host",
+                    "password": "Contrase\u00f1a",
+                    "port": "Puerto",
+                    "ssl": "Utiliza un certificado SSL",
+                    "username": "Nombre de usuario"
+                },
+                "data_description": {
+                    "feature_device_tracking": "Habilitar o deshabilitar la funci\u00f3n de seguimiento de dispositivos de red.",
+                    "host": "El nombre de host o la direcci\u00f3n IP de tu router FRITZ!Box.",
+                    "password": "Contrase\u00f1a para el FRITZ!Box.",
+                    "port": "D\u00e9jalo en blanco para utilizar el puerto predeterminado.",
+                    "ssl": "Utilizar SSL para conectar a tu FRITZ!Box.",
+                    "username": "Nombre de usuario para el FRITZ!Box. Los dispositivos FRITZ!Powerline ignoran esta informaci\u00f3n y aceptan cualquier valor."
+                },
+                "description": "Configura las herramientas de FRITZ!Box para controlar tu FRITZ!Box.\nM\u00ednimo necesario: nombre de usuario, contrase\u00f1a.",
+                "title": "Configurar FRITZ!Box Tools"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_connected": {
+                "name": "Conexi\u00f3n"
+            },
+            "is_linked": {
+                "name": "Enlace"
+            }
+        },
+        "button": {
+            "cleanup": {
+                "name": "Limpiar"
+            },
+            "firmware_update": {
+                "name": "Actualizaci\u00f3n de firmware"
+            },
+            "reconnect": {
+                "name": "Volver a conectar"
+            },
+            "wake_on_lan": {
+                "name": "Wake on LAN"
+            }
+        },
+        "sensor": {
+            "connection_uptime": {
+                "name": "Tiempo de conexi\u00f3n"
+            },
+            "cpu_temperature": {
+                "name": "Temperatura de la CPU"
+            },
+            "external_ip": {
+                "name": "IP externa"
+            },
+            "external_ipv6": {
+                "name": "IPv6 externa"
+            },
+            "gb_received": {
+                "name": "GB recibidos"
+            },
+            "gb_sent": {
+                "name": "GB enviados"
+            },
+            "kb_s_received": {
+                "name": "Velocidad de descarga"
+            },
+            "kb_s_sent": {
+                "name": "Velocidad de subida"
+            },
+            "link_attenuation_received": {
+                "name": "Atenuaci\u00f3n de potencia del enlace de descarga"
+            },
+            "link_attenuation_sent": {
+                "name": "Atenuaci\u00f3n de potencia del enlace de subida"
+            },
+            "link_kb_s_received": {
+                "name": "Velocidad de descarga"
+            },
+            "link_kb_s_sent": {
+                "name": "Velocidad de subida"
+            },
+            "link_noise_margin_received": {
+                "name": "Margen de ruido del enlace de descarga"
+            },
+            "link_noise_margin_sent": {
+                "name": "Margen de ruido del enlace de subida"
+            },
+            "max_kb_s_received": {
+                "name": "M\u00e1xima velocidad de descarga"
+            },
+            "max_kb_s_sent": {
+                "name": "M\u00e1xima velocidad de subida"
+            }
+        },
+        "switch": {
+            "internet_access": {
+                "name": "Acceso a Internet"
+            },
+            "wi_fi_guest": {
+                "name": "Wi-Fi de invitados"
+            },
+            "wi_fi_main_2_4ghz": {
+                "name": "Wi-Fi principal 2.4GHz"
+            },
+            "wi_fi_main_5ghz": {
+                "name": "Wi-Fi principal 5GHz"
+            },
+            "wi_fi_main_5ghz_high_6ghz": {
+                "name": "Wi-Fi principal 5GHz alta / 6GHz"
+            }
+        }
+    },
+    "exceptions": {
+        "config_entry_not_found": {
+            "message": "No se pudo realizar la acci\u00f3n \"{service}\". Entrada de configuraci\u00f3n para el objetivo no encontrada"
+        },
+        "error_connecting": {
+            "message": "Error al conectar con el FRITZ!Box: {error}"
+        },
+        "error_parse_device_info": {
+            "message": "Error al analizar la informaci\u00f3n del dispositivo. Por favor, comprueba el registro de eventos del sistema de tu FRITZ!Box para detectar datos con formato incorrecto y borra la lista de eventos."
+        },
+        "error_refresh_hosts_info": {
+            "message": "Error al actualizar la informaci\u00f3n de los hosts"
+        },
+        "error_upnp_disabled": {
+            "message": "UPnP est\u00e1 deshabilitado en el FRITZ!Box. Por favor, habilita UPnP para utilizar esta integraci\u00f3n."
+        },
+        "service_dial_failed": {
+            "message": "Error al marcar, comprueba si el servicio clic para marcar de tu FRITZ!Box est\u00e1 activado"
+        },
+        "service_not_supported": {
+            "message": "Acci\u00f3n no admitida"
+        },
+        "service_parameter_unknown": {
+            "message": "Acci\u00f3n o par\u00e1metro desconocido"
+        },
+        "update_failed": {
+            "message": "Error al actualizar los datos: {error}"
+        }
+    },
+    "issues": {
+        "deprecated_cleanup_button": {
+            "description": "El bot\u00f3n \"Limpiar\" est\u00e1 obsoleto y se eliminar\u00e1 en Home Assistant Core {removal_version}. Por favor, actualiza tus automatizaciones y paneles de control para eliminar cualquier uso de este bot\u00f3n. La acci\u00f3n se realiza ahora autom\u00e1ticamente cada vez que se actualizan los datos.",
+            "title": "El bot\u00f3n \"Limpiar\" est\u00e1 obsoleto."
+        },
+        "deprecated_firmware_update_button": {
+            "description": "El bot\u00f3n \"Actualizar firmware\" est\u00e1 obsoleto y se eliminar\u00e1 en el Home Assistant Core {removal_version}. Ha sido sustituido por una entidad de actualizaci\u00f3n. Por favor, actualiza tus automatizaciones y paneles de control para eliminar cualquier uso de este bot\u00f3n.",
+            "title": "El bot\u00f3n \"Actualizar firmware\" est\u00e1 obsoleto"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "consider_home": "Segundos para considerar un dispositivo en 'casa'",
+                    "feature_device_tracking": "Habilitar el seguimiento de dispositivos de red",
+                    "old_discovery": "Habilitar el m\u00e9todo de descubrimiento antiguo"
+                },
+                "data_description": {
+                    "consider_home": "Tiempo en segundos para considerar un dispositivo en casa. El valor predeterminado es 180 segundos.",
+                    "feature_device_tracking": "Habilitar o deshabilitar la funci\u00f3n de seguimiento de dispositivos de red.",
+                    "old_discovery": "Habilitar el m\u00e9todo de descubrimiento anterior. Esto es necesario en algunos casos."
+                }
+            }
+        }
+    },
+    "services": {
+        "dial": {
+            "description": "Hace que el FRITZ!Box marque un n\u00famero de tel\u00e9fono.",
+            "fields": {
+                "device_id": {
+                    "description": "Selecciona el FRITZ!Box desde el que quieres marcar.",
+                    "name": "Dispositivo FRITZ!Box"
+                },
+                "max_ring_seconds": {
+                    "description": "El n\u00famero m\u00e1ximo de segundos que sonar\u00e1 despu\u00e9s de marcar.",
+                    "name": "Duraci\u00f3n m\u00e1xima del timbre"
+                },
+                "number": {
+                    "description": "El n\u00famero de tel\u00e9fono que hay que marcar.",
+                    "name": "N\u00famero de tel\u00e9fono"
+                }
+            },
+            "name": "Marcar un n\u00famero de tel\u00e9fono"
+        },
+        "set_guest_wifi_password": {
+            "description": "Establece una nueva contrase\u00f1a para la Wi-Fi de invitados. La contrase\u00f1a debe tener entre 8 y 63 caracteres. Si no se establece ning\u00fan par\u00e1metro adicional, la contrase\u00f1a se generar\u00e1 autom\u00e1ticamente con una longitud de 12 caracteres.",
+            "fields": {
+                "device_id": {
+                    "description": "Selecciona el FRITZ!Box para configurar.",
+                    "name": "Dispositivo FRITZ!Box"
+                },
+                "length": {
+                    "description": "Longitud de la nueva contrase\u00f1a. Se generar\u00e1 autom\u00e1ticamente si no se establece ninguna.",
+                    "name": "Longitud de la contrase\u00f1a"
+                },
+                "password": {
+                    "description": "Nueva contrase\u00f1a para la Wi-Fi de invitados.",
+                    "name": "Contrase\u00f1a"
+                }
+            },
+            "name": "Establecer contrase\u00f1a de Wi-Fi para invitados"
+        }
+    }
+}

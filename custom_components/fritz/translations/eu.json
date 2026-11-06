@@ -1,0 +1,96 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Gailua dagoeneko konfiguratuta dago",
+            "already_in_progress": "Dagoeneko konfiguratuta dago. Berriro hasi baino lehen existitzen den konfigurazioarekin amaitu."
+        },
+        "error": {
+            "already_configured": "Gailua dagoeneko konfiguratuta dago",
+            "already_in_progress": "Dagoeneko konfiguratuta dago. Berriro hasi baino lehen existitzen den konfigurazioarekin amaitu.",
+            "cannot_connect": "Konexioak huts egin du",
+            "invalid_auth": "Autentifikazio baliogabea",
+            "unknown_error": "Ustekabeko errorea"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "confirm": {
+                "data": {
+                    "password": "Pasahitza",
+                    "ssl": "SSL ziurtagiria erabiltzen du",
+                    "username": "Erabiltzaile-izena"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Pasahitza",
+                    "username": "Erabiltzaile-izena"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Ostalari",
+                    "port": "Ataka",
+                    "ssl": "SSL ziurtagiria erabiltzen du"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Ostalari",
+                    "password": "Pasahitza",
+                    "port": "Ataka",
+                    "ssl": "SSL ziurtagiria erabiltzen du",
+                    "username": "Erabiltzaile-izena"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "is_connected": {
+                "name": "Konexioa"
+            },
+            "is_linked": {
+                "name": "Lotura"
+            }
+        },
+        "button": {
+            "reconnect": {
+                "name": "Birkonektatu"
+            }
+        },
+        "sensor": {
+            "external_ip": {
+                "name": "Kanpoko IP-a"
+            },
+            "gb_received": {
+                "name": "Jasotako GB"
+            },
+            "gb_sent": {
+                "name": "Bidalitako GB"
+            }
+        }
+    },
+    "exceptions": {
+        "service_not_supported": {
+            "message": "Ekintza ez da onartzen"
+        },
+        "service_parameter_unknown": {
+            "message": "Ekintza edo parametro ezezaguna"
+        }
+    },
+    "issues": {
+        "deprecated_firmware_update_button": {
+            "description": "'Firmwarea eguneratu' botoia zaharkituta dago eta Home Assistant Core-ren {removal_version}-an kenduko da. Eguneratze-entitatearekin ordezkatu da. Mesedez, zure automatizazioak eta aginte-panelak egunera itzazu botoi honen edozein erabilera kentzeko.",
+            "title": "'Firmwarea eguneratu' botoia zaharkituta dago"
+        }
+    },
+    "services": {
+        "set_guest_wifi_password": {
+            "fields": {
+                "password": {
+                    "name": "Pasahitza"
+                }
+            }
+        }
+    }
+}
