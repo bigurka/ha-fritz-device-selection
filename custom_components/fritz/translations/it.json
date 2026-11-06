@@ -195,6 +195,7 @@
           "deselect_all": "Togli tutte le spunte",
           "feature_device_tracking": "Abilita il monitoraggio dei dispositivi di rete",
           "old_discovery": "Abilita il vecchio metodo di rilevamento",
+          "select_all": "Spunta tutti i dispositivi",
           "tracked_devices": "Dispositivi di rete da integrare"
         },
         "data_description": {
@@ -203,6 +204,7 @@
           "deselect_all": "Spunta questa casella e premi Invia: l'elenco qui sotto si riapre tutto vuoto, senza salvare niente. Poi spunta i dispositivi che ti servono e premi di nuovo Invia.",
           "feature_device_tracking": "Abilita o disabilita la funzionalità di tracciamento dei dispositivi di rete.",
           "old_discovery": "Abilita il vecchio metodo di individuazione. Questa opzione è necessaria in alcuni scenari.",
+          "select_all": "Spunta questa casella e premi Invia: l'elenco qui sotto si riapre tutto spuntato, senza salvare niente. Poi togli la spunta ai dispositivi che non ti servono e premi di nuovo Invia.",
           "tracked_devices": "Solo i dispositivi selezionati hanno il tracker di presenza, l'interruttore di accesso a Internet e il pulsante Wake on LAN. I dispositivi deselezionati vengono rimossi da Home Assistant insieme alle loro entità."
         }
       }

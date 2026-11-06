@@ -57,8 +57,9 @@ DEFAULT_CONF_ADD_NEW_DEVICES = True
 CONF_TRACKED_DEVICES = "tracked_devices"
 CONF_IGNORED_DEVICES = "ignored_devices"
 
-# Option form field that unticks the whole device list, never stored
+# Option form fields that untick or tick the whole device list, never stored
 CONF_DESELECT_ALL = "deselect_all"
+CONF_SELECT_ALL = "select_all"
 
 DSL_CONNECTION: Literal["dsl"] = "dsl"
 

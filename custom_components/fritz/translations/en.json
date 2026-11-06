@@ -228,6 +228,7 @@
           "deselect_all": "Untick all devices",
           "feature_device_tracking": "Enable network device tracking",
           "old_discovery": "Enable old discovery method",
+          "select_all": "Tick all devices",
           "tracked_devices": "Network devices to integrate"
         },
         "data_description": {
@@ -236,6 +237,7 @@
           "deselect_all": "Tick this box and press Submit: the list below opens again with nothing ticked and nothing is saved. Then tick the devices you need and press Submit again.",
           "feature_device_tracking": "Enable or disable the network device tracking feature.",
           "old_discovery": "Enable old discovery method. This is needed for some scenarios.",
+          "select_all": "Tick this box and press Submit: the list below opens again with every device ticked and nothing is saved. Then untick the devices you do not need and press Submit again.",
           "tracked_devices": "Only the selected devices get a device tracker, an internet access switch and a Wake on LAN button. Deselected devices are removed from Home Assistant together with their entities."
         }
       }

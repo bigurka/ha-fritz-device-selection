@@ -52,6 +52,7 @@ from .const import (
     CONF_FEATURE_DEVICE_TRACKING,
     CONF_IGNORED_DEVICES,
     CONF_OLD_DISCOVERY,
+    CONF_SELECT_ALL,
     CONF_TRACKED_DEVICES,
     DEFAULT_CONF_ADD_NEW_DEVICES,
     DEFAULT_CONF_FEATURE_DEVICE_TRACKING,
@@ -488,13 +489,18 @@ class FritzBoxToolsOptionsFlowHandler(OptionsFlowWithReload):
 
         options = self.config_entry.options
         device_options = self._device_select_options()
-        # Show the form again with the list unticked, nothing is stored until
-        # the form is submitted without this field
-        deselect_all = user_input is not None and user_input.pop(
-            CONF_DESELECT_ALL, False
-        )
+        # Show the form again with the list unticked or ticked, nothing is stored
+        # until the form is submitted without these fields
+        preset_devices: list[str] | None = None
+        if user_input is not None:
+            deselect_all = user_input.pop(CONF_DESELECT_ALL, False)
+            select_all = user_input.pop(CONF_SELECT_ALL, False)
+            if deselect_all:
+                preset_devices = []
+            elif select_all:
+                preset_devices = [option["value"] for option in device_options]
 
-        if user_input is not None and not deselect_all:
+        if user_input is not None and preset_devices is None:
             if device_options:
                 # Devices shown and not selected are ignored; the choice made for
                 # devices not shown now (e.g. not listed by the FRITZ!Box at the
@@ -545,11 +551,12 @@ class FritzBoxToolsOptionsFlowHandler(OptionsFlowWithReload):
         }
         if device_options:
             schema[probatio.Optional(CONF_DESELECT_ALL, default=False)] = bool
+            schema[probatio.Optional(CONF_SELECT_ALL, default=False)] = bool
             schema[
                 probatio.Optional(
                     CONF_TRACKED_DEVICES,
-                    default=[]
-                    if deselect_all
+                    default=preset_devices
+                    if preset_devices is not None
                     else [
                         option["value"]
                         for option in device_options

@@ -18,8 +18,9 @@ FRITZ!Box: con decine di telefoni, TV, prese e lampadine la lista diventa ingest
 - **Dispositivi di rete da integrare**: nelle opzioni (Impostazioni → Dispositivi e servizi →
   FRITZ!Box Tools → Configura) compare l'elenco di tutti i dispositivi conosciuti dal FRITZ!Box,
   con nome, IP e MAC. Solo quelli spuntati vengono integrati.
-- **Togli tutte le spunte**: spunta la casella sopra l'elenco e premi Invia: l'elenco si riapre tutto
-  vuoto senza salvare niente, poi spunti solo i dispositivi che ti servono e premi di nuovo Invia.
+- **Togli tutte le spunte / Spunta tutti i dispositivi**: spunta una delle due caselle sopra l'elenco e
+  premi Invia: l'elenco si riapre tutto vuoto o tutto spuntato senza salvare niente, poi sistemi le
+  spunte e premi di nuovo Invia. Se le spunti entrambe vince "Togli tutte le spunte".
 - **Rimozione automatica**: i dispositivi tolti dalla selezione vengono rimossi da Home Assistant
   insieme alle loro entità al primo aggiornamento (entro 30 secondi). È il modo per fare pulizia
   di massa in un'installazione esistente.
@@ -69,8 +70,9 @@ and bulbs the list becomes unmanageable.
 - **Network devices to integrate**: the options (Settings → Devices & services →
   FRITZ!Box Tools → Configure) list all devices known by the FRITZ!Box, with name, IP and MAC.
   Only the checked ones are integrated.
-- **Untick all devices**: tick the box above the list and press Submit: the list opens again with
-  nothing ticked and nothing is saved, then tick only the devices you need and press Submit again.
+- **Untick all devices / Tick all devices**: tick one of the two boxes above the list and press
+  Submit: the list opens again all unticked or all ticked and nothing is saved, then adjust it and
+  press Submit again. If both are ticked, "Untick all devices" wins.
 - **Automatic removal**: deselected devices are removed from Home Assistant together with their
   entities on the next update (within 30 seconds). This is how to clean up an existing
   installation in bulk.

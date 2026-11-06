@@ -12,6 +12,7 @@ from custom_components.fritz.const import (
     CONF_DESELECT_ALL,
     CONF_IGNORED_DEVICES,
     CONF_OLD_DISCOVERY,
+    CONF_SELECT_ALL,
     CONF_TRACKED_DEVICES,
     DOMAIN,
     SCAN_INTERVAL,
@@ -230,3 +231,56 @@ async def test_options_flow_deselect_all(
     await hass.async_block_till_done(wait_background_tasks=True)
     assert _tracker(entity_registry, SERVER_MAC) is None
     assert _tracker(entity_registry, PRINTER_MAC)
+
+
+async def test_options_flow_select_all(
+    hass: HomeAssistant,
+    fc_class_mock,
+    fh_class_mock,
+    fs_class_mock,
+) -> None:
+    """The select all box shows the list ticked without saving anything."""
+    printer, server = dr.format_mac(PRINTER_MAC), dr.format_mac(SERVER_MAC)
+    entry = await _setup(
+        hass, {CONF_ADD_NEW_DEVICES: False, CONF_TRACKED_DEVICES: [printer]}
+    )
+    options_before = dict(entry.options)
+
+    result = await hass.config_entries.options.async_init(entry.entry_id)
+    result = await hass.config_entries.options.async_configure(
+        result["flow_id"],
+        user_input={CONF_SELECT_ALL: True, CONF_TRACKED_DEVICES: [printer]},
+    )
+    assert result["type"] is FlowResultType.FORM
+    assert dict(entry.options) == options_before
+    keys = {str(key): key for key in result["data_schema"].schema}
+    assert set(keys[CONF_TRACKED_DEVICES].default()) == {printer, server}
+    assert keys[CONF_SELECT_ALL].default() is False
+
+    result = await hass.config_entries.options.async_configure(
+        result["flow_id"],
+        user_input={CONF_TRACKED_DEVICES: [printer, server]},
+    )
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    await hass.async_block_till_done()
+    assert CONF_SELECT_ALL not in entry.options
+    assert entry.options[CONF_TRACKED_DEVICES] == [printer, server]
+    assert entry.options[CONF_IGNORED_DEVICES] == []
+
+
+async def test_options_flow_deselect_wins_over_select_all(
+    hass: HomeAssistant,
+    fc_class_mock,
+    fh_class_mock,
+    fs_class_mock,
+) -> None:
+    """With both boxes ticked the list is shown unticked."""
+    entry = await _setup(hass)
+    result = await hass.config_entries.options.async_init(entry.entry_id)
+    result = await hass.config_entries.options.async_configure(
+        result["flow_id"],
+        user_input={CONF_DESELECT_ALL: True, CONF_SELECT_ALL: True},
+    )
+    assert result["type"] is FlowResultType.FORM
+    keys = {str(key): key for key in result["data_schema"].schema}
+    assert keys[CONF_TRACKED_DEVICES].default() == []
